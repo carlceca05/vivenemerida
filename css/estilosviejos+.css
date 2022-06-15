@@ -1,0 +1,158 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.fondo{
+	background-image:  url("../imagenes/vender_natura_banner.webp"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.fondito{
+	background-color: rgba(255,255,255,0.7);
+}
+/*.navega{
+	background-color: #f0f0f0;
+}*/
+.alto{
+	height: 50vh;
+}
+/*.subtitulo{
+	font-size: 17px;
+	color: #cccccc;
+}*/
+.appwhatsapp{
+		position: fixed;
+		right: 30px;
+		bottom: 50px;
+		width: 60px;
+		z-index: 1000;
+}
+/*.appwhatsapp img{
+	width: 100%;
+	height: auto;
+}*/
+.parallax{
+	background-image: url("../imagenes/vender_natura_banner_2.webp");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+.parallax2{
+	background-image: url("../imagenes/fondo2.png"); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+/* menu   */
+.arribamenu{
+	display: flex;
+	justify-content: space-between;
+	padding-left: 0px;
+	padding-right: 50px;
+	height: 45px;
+	padding-top: 12px;
+}
+.arribamenu li{
+	list-style: none;
+	/*text-align: center;*/
+	/*background-color: #ff4949;*/
+	width: 100%;
+	
+}
+.arribamenu a{
+	text-align: center;
+	text-decoration: none;
+	color: #7f7f7f;
+}
+.arribamenu a:hover,a:active{
+	color: rgba(0,0,0,.9);
+}
+.redes{
+	/*display: flex;*/
+	justify-content: space-between;
+}
+/*.respira{
+	margin-right: 15px;
+} */
+.revista{
+	position: absolute;
+	left: 70%;
+	top: 15px;
+}
+@media only screen and (min-width:900px) and (max-width:2000px){
+ 	.desaparecedor {
+ 	display: none;
+	}
+	.menusss{
+		display: none;
+	}
+
+}
+@media only screen and (min-width:100px) and (max-width:900px){
+ 	.desaparesidos {
+ 	display: none;
+	}
+	.fondo {
+		background-image: url("../imagenes/vender_natura_banner_movil.webp");
+   }
+   .arribamenu {
+	   display: none;
+   }
+}
+
+/* estilos del formulario       */ 
+@font-face {
+	font-display: block;
+	font-family: Roboto;
+	src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: Roboto;
+	font-weight: 600;
+	src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+}
+
+@font-face {
+	font-display: fallback;
+	font-family: Roboto;
+	font-weight: 700;
+	src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+}
+
+#sib-container input:-ms-input-placeholder {
+	text-align: left;
+	font-family: "Helvetica", sans-serif;
+	color: #c0ccda;
+}
+
+#sib-container input::placeholder {
+	text-align: left;
+	font-family: "Helvetica", sans-serif;
+	color: #c0ccda;
+}
+
+#sib-container textarea::placeholder {
+	text-align: left;
+	font-family: "Helvetica", sans-serif;
+	color: #c0ccda;
+}
+
+.sib-form{
+	text-align: center;
+	/* background-color: #f2f2f2; */
+}
+
+.sib-form-message-panel{
+	font-size: 16px; 
+	text-align: left; 
+	font-family: Helvetica, sans-serif; 
+	color: #661d1d; 
+	background-color: #ffeded; 
+	border-radius: 3px; 
+	border-color: #ff4949;
+	max-width: 540px;
+}

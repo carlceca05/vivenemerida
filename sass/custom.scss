@@ -4,6 +4,12 @@
     background-size: cover;
     background-position: center;
 }
+.fondo3{
+    background-image: url(../img/fondo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 
 .arriba{
@@ -31,11 +37,17 @@
         background-size: cover;
         background-position: center;
     }
+    .fondo3{
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 }	
 
 
 
-$warning:  #fac710 ;
+$warning:  #F6E739 ;
 $primary: #6e00f9;
 $font-family-sans-serif: 'Poppins', sans-serif;
 

@@ -27,6 +27,12 @@
 
 	
 	<style>
+		.img-enlace{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 19;
+}
 		@media only screen and (min-width:900px) and (max-width:2000px){
 
 		}
@@ -228,17 +234,14 @@
 	<div class="pb-5 mb-4">
 		<img class="" src="img/servicios.png" width="100%" style="" alt="">
 	</div>
-	
-	
-	
 	<!--seccion4-->
 	<div class="container-fluid bg-warning py-4 ">
 		<div class="container py-2">
 			<div class="row  ">
-				<div class="col-12 col-lg-8">
-					<p class=" h5 mb-0">¡Y además podrás tener acceso exclusivo al Club de Playa en Telchac Puerto!  </p>
+				<div class="col-12 col-lg-8 mb-4 mb-lg-0">
+					<p class="text-center text-lg-start h5 mb-0">¡Y además podrás tener acceso exclusivo al Club de Playa en Telchac Puerto!  </p>
 				</div>
-				<div class="col-12 col-lg-4 d-flex justify-content-end align-items-center">
+				<div class="col-12 col-lg-4 d-block d-lg-flex justify-content-end text-center align-items-center">
 					<div class="">
 						<button type="button"  class="btn btn-primary  " data-bs-toggle="modal" data-bs-target="#playa">
 							Recorrido Virtual Club de Playa
@@ -276,8 +279,8 @@
 
 	<!--seccion5-->
 	<div class="container-fluid  py-5 ">
-		<div class="container ">
-			<h3 class="text-center h1 mb-5 text-uppercase" >Urbanismo y vanguardia</h3>
+		<div class="container py-3">
+			<h3 class="text-center h1 mb-4 mb-lg-5 text-uppercase" style="font-weight: 600;" >Urbanismo y vanguardia</h3>
 			<div class="row row-cols-1 row-cols-lg-2">
 				<div class="col mb-4">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -286,7 +289,10 @@
 				</div>
 				<div class="col">
 					<p class="h3 text-center  fw-light">  Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega  </p>
-					<div class="row py-4">
+					<div class="py-4">
+						<img class="img-fluid" src="img/luz,agua.png" alt="">
+					</div>
+					<!--<div class="row py-4">
 						<div class="col">
 							<img class="img-fluid lazyload" data-src="img/electricidad.png" alt="">
 						</div>
@@ -296,7 +302,7 @@
 						<div class="col">
 							<img class="img-fluid lazyload" data-src="img/drenaje.webp" alt="">
 						</div>
-					</div>
+					</div>-->
 					<p class="h4 text-center"> Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales </p>
 
 				</div>
@@ -307,7 +313,7 @@
 	<!--seccion5-->
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
-			<h3 class="h1 text-uppercase text-center mb-4 mb-lg-5" > Seguridad y privacidad</h3>
+			<h3 class="h1 text-uppercase text-center mb-4 mb-lg-5" style="font-weight: 600;"> Seguridad y privacidad</h3>
 			<div class="row row-cols-1 row-cols-lg-2 py-4">
 				<div class="col mb-5 mb-lg-0">
 					<p class="h3 fw-light">  <strong class="text-primary fw-normal"> Ciudad Central</strong> cuenta con medidas para garantizar que tú y tu familia tengan un entorno seguro, cómodo y privado.</p>
@@ -334,16 +340,11 @@
 							<img class="lazyload" data-src="img/policia.png" width="80px" alt="">
 						</div>
 					</div>
-					
 				</div>
 				<div class="col ">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="rounded lazyload shadow" data-src="https://www.youtube.com/embed/mJTROq99hos" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					  </div>
-					
-
-
-					
+					</div>
 				</div>
 			</div>
 		</div>
@@ -351,7 +352,8 @@
 	<!--seccion6-->
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
-			<p class="h3 text-center fw-normal mb-5"> Macro-fraccionamiento de 920 hectáreas totalmente planeado para convivir como una Ciudad Inteligente </p>
+			<h3 class="h1 text-center mb-4 mb-lg-5 text-uppercase text-primary" style="font-weight: 600;" > Master Plan </h3>
+			<p class="h3 text-center fw-normal mb-4"> Macro-fraccionamiento de 920 hectáreas totalmente planeado para convivir como una Ciudad Inteligente </p>
 			<!-- carrusel  -->
 			<div id="carousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
 				<div class="carousel-inner">
@@ -444,22 +446,26 @@
 	</div>
 	<!--seccion7-->
 	<div class="container-fluid  py-5 ">
-		<div class="container py-5">
-			<h4 class="text-end h1 ">Crédito Central</h4>
-			<div class="row">
-				<div class="col d-flex justify-content-center">
-					
-					<ul class="list-unstyled h4 fw-light">
-						<li> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;  Sin revisión de buró de crédito </li><br>
-						<li> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Plazos de hasta 180 meses </li><br>
-						<li> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Sin comprobación de ingresos  </li><br>
-						<li> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Mensualidades accesibles </li><br>
-						<li> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Periodos a meses sin intereses </li>
-					</ul>
+		<div class="container py-3">
+			<h4 class="text-center h1 mb-3 mb-lg-5 text-uppercase" style="font-weight: 600;">Crédito Central</h4>
+			<div class="row row-cols-1 row-cols-lg-2">
+				<div class="col mb-4 d-none d-lg-block">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="rounded lazyload shadow" data-src="https://www.youtube.com/embed/z0Nmt05g-Hc" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
 				<div class="col">
-					<h3 class="text-end"> Financiamiento al alcance de tu bolsillo </h3>
-					<div class="row  pt-5" style="max-width: 280px; margin-left: auto; margin-right: auto;">
+					<h3 class=" mb-4 mb-lg-4"> Financiamiento al alcance de tu bolsillo </h3>
+					<div class="d-flex" style="margin: 0 auto;" >
+						<div class="row row-cols-1 row-cols-lg-1 h4 fw-light  ms-0 ms-lg-4" >
+							<div class="col mb-3"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;  Sin revisión de buró de crédito </div>
+							<div class="col mb-3"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Plazos de hasta 180 meses</div>
+							<div class="col mb-3"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Sin comprobación de ingresos </div>
+							<div class="col mb-3"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Mensualidades accesibles </div>
+							<div class="col mb-3"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Periodos a meses sin intereses </div>
+						</div>
+					</div>
+					<div class="row  pt-2 pb-4 pb-lg-0  " style="max-width: 280px; margin-left: auto; margin-right: auto;">
 						<div class="col">
 							<img src="img/dinero.png" width="100px" alt="">
 						</div>
@@ -468,9 +474,12 @@
 						</div>
 					</div>
 				</div>
+				<div class="col mb-4 d-block d-lg-none">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="rounded lazyload shadow" data-src="https://www.youtube.com/embed/z0Nmt05g-Hc" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
 			</div>
-			
-			
 		</div>
 	</div>
 	<!--seccion8-->
@@ -484,7 +493,7 @@
 	</style>
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
-			<h4 class="text-center text-primary h1 text-uppercase  mb-5"  >Terrenos al tamaño de tu proyecto</h4>
+			<h4 class="text-center h1 text-uppercase  mb-5" style="font-weight: 600;" >Terrenos al tamaño de tu proyecto</h4>
 			<p class="h4 fw-light text-center"> Superficies desde 133 m2 hasta 749 m2. <br> Predios con poligono regular, irregular, esquinas y excedentes. <br><br> </p>
 			<p class="text-center fw-bold h4 "> ¡Elige el que más se acomode a tí!  </p>
 			<div class="row row-cols-1 row-cols-lg-3 py-5">
@@ -528,34 +537,30 @@
 	<!--seccion8-->
 	<div class="container-fluid  py-5 ">
 		<div class="container py-5">
-			<h4 class="text-center h1 text-primary mb-5 text-uppercase">Consulta disponibilidad en tiempo real</h4>
-			<div class="row">
-				<div class="col ">
-					<div class="d-flex mb-3 align-items-center"> 
-						<div class="bg-success" style="width: 50px;height: 50px; border-radius: 100px; " > </div>
-						<p class="mb-0 ms-3"> Disponible </p>
+			<h4 class="text-center h1 mb-5 text-uppercase"  style="font-weight: 600;">Consulta disponibilidad en tiempo real</h4>
+			<div class="row ">
+				<div class="col-12 col-lg-4 mb-4">
+					<div class=" d-flex justify-content-center align-items-center">
+						<div  style="">
+							<div class="d-flex mb-3 align-items-center"  > 
+								<div class="bg-success" style="width: 50px;height: 50px; border-radius: 100px; " > </div>
+								<p class="mb-0 ms-3"> Disponible </p>
+							</div>
+							<div class="d-flex mb-3 align-items-center">
+								<div class="bg-warning" style="width: 50px;height: 50px; border-radius: 100px; " > </div>
+								<p class="mb-0 ms-3"> Apartado </p>
+							</div>
+							<div class="d-flex mb-3 align-items-center">
+								<div class="bg-danger" style="width: 50px;height: 50px; border-radius: 100px; " > </div>
+								<p class="mb-0 ms-3">  No disponible </p>
+							</div>
+						</div>
 					</div>
-					<div class="d-flex mb-3 align-items-center">
-						<div class="bg-warning" style="width: 50px;height: 50px; border-radius: 100px; " > </div>
-						<p class="mb-0 ms-3"> Apartado </p>
-					</div>
-					<div class="d-flex mb-3 align-items-center">
-						<div class="bg-danger" style="width: 50px;height: 50px; border-radius: 100px; " > </div>
-						<p class="mb-0 ms-3">  No disponible </p>
-					</div>
-				<a  class="btn btn-primary mt-5" target="_blank" href="https://crm.grupoorve.mx/cotizador/ccprogreso-e1/ccprogreso-e3/ccp-e3-p1?vendedor=Mjg5NA%3D%3D%0A"> Consultar </a>
+					<p class="text-center"><a  class="btn btn-primary mt-3 mt-lg-3" target="_blank" href="https://crm.grupoorve.mx/cotizador/ccprogreso-e1/ccprogreso-e3/ccp-e3-p1?vendedor=Mjg5NA%3D%3D%0A"> Consultar </a></p>
 				</div>
-				<style>
-					.img-enlace{
-						position: absolute;
-						width: 100%;
-						height: 100%;
-						z-index: 19;
-					}
-				</style>
-				<div class="col">
+				<div class="col-12 col-lg-8 position-relative">
 					<a class="img-enlace" target="_blank" href="https://crm.grupoorve.mx/cotizador/ccprogreso-e1/ccprogreso-e3/ccp-e3-p1?vendedor=Mjg5NA%3D%3D%0A">   </a>
-					<img class="img-fluid lazyload" data-src="img/image23.png" alt="">
+					<img class=" lazyload" width="100%" data-src="img/progreso.png" alt="">
 				</div>
 			</div>
 		</div>
@@ -571,7 +576,7 @@
 	<div class="container-fluid  py-5 ">
 		<div class="container py-5">
 			<h2 class="text-center text-primary">Proceso de compra</h2>
-			<ol>
+			<ol class="list-unstyled">
 				<li> Elige el terreno que más se adecue a tu proyecto.</li>
 				<li> Apártalo online con tan solo $1,0000. </li>
 				<li>Firma tu contrato de compra de manera digital o en cualquiera de nuestras 10 oficinas </li>
@@ -600,6 +605,100 @@
 			<p class="text-center text-muted">Vive Mérida | <a class="text-decoration-none text-decoration-underline text-muted" href="privacidad.html"> aviso de privacidad</a> </p>
 		</footer>
 	</div>
+
+
+	<!--cotizacion-->
+    <section class="container-fluid pt-5 dos" >
+		<div class="container  pt-5 ">
+			<h2 class="mb-4 text-center text-uppercase gordita fs-1  text-white">Solicite una cotización</h2>
+			<p class="text-center "> <a class="btn mb-5  btn-outline-light text-uppercase fw-bold" href="contacto.html">Ir a contacto</a></p>
+			<!--
+			<hr class="my-4 bg-light" style="height: 1px; border:none;"> 
+			<div class="row">
+				<h5 class="text-center  mb-4 text-uppercase text-success">nuestro equipo</h5>
+				<div class="col" >
+					<div  id="carousel4" class="carousel slide hero-slides d-flex justify-content-center " data-ride="carousel">
+						<ol class="carousel-indicators ">
+							<li class="active" data-target="#carousel4" data-slide-to="0"></li>
+							<li data-target="#carousel4" data-slide-to="1"></li>
+							<li data-target="#carousel4" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner  logos" role="listbox"  >
+							<div class="carousel-item active "> 
+								<div class="container  d-md-block">
+									<div class="caption  ">
+										<div class="row">
+											<div class="col  d-flex justify-content-evenly">
+												<img class="lazyload img-fluid" src="img/logo_fullness.webp" alt="cecaes" width="80px" title="fullness">
+												<img class="lazyload img-fluid" src="img/logo_fullness.webp" alt="cecaes" width="80px" title="fullness">
+												<img class="lazyload img-fluid" src="img/logo_fullness.webp" alt="cecaes" width="80px" title="fullness">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item "> 
+								<div class="container  d-md-block">
+									<div class="caption  ">
+										<div class="row">
+											<div class="col d-flex d-flex justify-content-evenly ">
+												<img class="lazyload img-fluid" src="img/logo_fullness.webp" alt="cecaes" width="80px" title="fullness">
+												<img class="lazyload img-fluid" src="img/logo_fullness.webp" alt="cecaes" width="80px" title="fullness">
+												<img class="lazyload img-fluid" src="img/logo_fullness.webp" alt="cecaes" width="80px" title="fullness">
+											</div>
+										</div>
+									</div>    
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			-->
+			<hr class="my-4 bg-light" style="height: 1px ; border:none;">
+			<small>
+			<div class="row row-cols-lg-4 row-cols-sm-1 text-center text-lg-start">
+				<div class=" cols-xs-12 cols-sm-12 cols-md-4 cols-lg-4 mb-2">
+					<h6 class="text-success" >NOSOTROS</h6>
+					<p class="fw-light roboto text-white">    Nuestro objetivo es brindarte las herramientas  para que tu empresa pueda crecer con fortaleza y plenitud.</p>
+				</div>
+				<div class=" cols-xs-12 cols-sm-12 cols-md-4 cols-lg-4 mb-2">
+					<h6 class="text-uppercase text-success">Programas</h6>
+					<p class="m-0"><a class="text-decoration-none fw-light   roboto efeito" href=""> <i class="bi bi-arrow-right-short "></i> Liderazgo Consciente  </a></p>
+					<p class="m-0"><a class="text-decoration-none  fw-light roboto efeito" href="">   </a></p>
+					<p class="m-0"><a class="text-decoration-none efeito fw-light roboto" href="">  </a></p>
+					<p class="m-0"><a class="text-decoration-none efeito fw-light roboto" href="">  </a></p>
+				</div>
+	
+				<div class=" cols-xs-12 cols-sm-12 cols-md-4 cols-lg-4 mb-2">
+					<h6 class="text-uppercase text-success"> Cursos</h6>
+					<p class="m-0"> <a class="text-decoration-none efeito fw-light roboto" href="">  <i class="bi bi-arrow-right-short"></i> Comunicación Efectiva  </a></p>
+					<p class="m-0"> <a class="text-decoration-none efeito fw-light roboto" href="">  <i class="bi bi-arrow-right-short"></i> Liderazgo Consciente </a></p>
+					<p class="m-0"> <a class="text-decoration-none efeito fw-light roboto" href="">  <i class="bi bi-arrow-right-short"></i> Trabajo en Equipo  </a></p>
+				</div>
+				<div class=" cols-xs-12 cols-sm-12 cols-md-4 cols-lg-4 mb-2">
+					<h6 class="text-uppercase text-success ">Contacto</h6>
+					<p class="text-white fw-light roboto m-0"> <a class="text-decoration-none efeito" href=""> <i class="bi bi-whatsapp "></i> &nbsp;  55 5818 1083 </a></p>
+					<p class="text-white fw-light roboto m-0"><a class="text-decoration-none efeito" href="https://www.facebook.com/fullnesscapacitacion">  <i class="bi bi-facebook "></i>&nbsp; /fullness</a>  </p>
+					<!--<p class="text-white fw-light roboto m-0"> <a class="text-decoration-none efeito" href=""> <i class="bi bi-instagram "></i>&nbsp;  /fullness  </a></p>-->
+					
+				</div>
+				
+			</div>
+			<hr class="bg-white" style="height: 1px; border:none;">
+			<div class="row row-cols-sm-1 row-cols-lg-3 ">
+				<div class="cols-lg-4 cols-md-12 ">
+					<p class=" text-center text-lg-start mb-0 "><a class="efeito text-decoration-none color" href="privacidad.html"> Privacidad</a></p>
+				</div>
+				<div class="col">
+				</div>
+				<div class="cols-lg-4 cols-md-12 text-center text-lg-end">
+					<p class="text-white">@CECAES 2021</p>
+				</div>
+			</div>
+			</small>
+		</div>
+	</section>
 	<!-- icono arriba--> 
 	<a  class="arriba" href="#top">
 		<i class="bi bi-chevron-up text-white " ></i>

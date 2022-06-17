@@ -1,3 +1,14 @@
+.fadeTop {
+    opacity: 0; 
+    transform: translate(0, 30vh);
+    transition: all 3s;
+}
+.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+
 .fondo{
     background-image: url(../img/fondo-escritorio.png);
     background-repeat: no-repeat;
@@ -53,7 +64,7 @@
 
 
 
-$warning:  #F6E739 ;
+$warning:  #F6E739;
 $primary: #6e00f9;
 $font-family-sans-serif: 'Poppins', sans-serif;
 

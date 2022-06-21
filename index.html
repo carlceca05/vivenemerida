@@ -17,7 +17,6 @@
 	<link rel="preload" as="style" type="text/css" href="sass/custom.css" onload="this.onload=null;this.rel='stylesheet'"> 
 	<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" onload="this.onload=null;this.rel='stylesheet'">
 	
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -33,7 +32,7 @@
 .fadeTop {
     opacity: 0; 
     transform: translate(0, 30vh);
-    transition: all 3s;
+    transition: all 1.4s;
 }
 .visible {
     opacity: 1;
@@ -72,6 +71,7 @@
 					<li class="nav-item mt-3 mt-lg-auto ms-auto ms-lg-0">
 						<a class="navbar-brand d-none d-lg-block" href="#">
 							<img src="img/logo-viveenmerida.png" width="80px" alt="">
+							<!--<img src="img/opcion-logo-2.png" width="80px" alt="">-->
 						</a>
 					</li>
 					<li class="nav-item mt-2 mt-lg-auto ms-auto ms-lg-0">
@@ -292,6 +292,7 @@
 					</div>
 				</div>
 				<div class="col mb-5 mb-lg-0">
+					<!--
 					<div class="row pt-4 pb-4 scroll-content fadeTop" style="max-width: 350px; margin: 0 auto;">
 						<div class="col ">
 							<img class="lazyload " data-src="img/camara-de-seguridad.png" width="80px" alt="">
@@ -303,18 +304,46 @@
 							<img class="lazyload" data-src="img/policia.png" width="80px" alt="">
 						</div>
 					</div>
+					-->
 					<p class="h3 fw-light scroll-content fadeTop">  <strong class="text-primary fw-normal"> Ciudad Central</strong> cuenta con medidas para garantizar que tú y tu familia tengan un entorno seguro, cómodo y privado.</p>
 					
 					<div class="row row-cols-1 row-cols-lg-2 h4 fw-light pt-3">
 						<div class="col mb-2 scroll-content fadeTop">
-							<div class="bg-warning"  style="border-radius: 100px; ">
-								<img src="img/camara-de-seguridad.png" width="23px"   >
+							<div class="d-flex align-items-center"> 
+								<div class="bg-warning p-2"  style="border-radius: 100px; ">
+									<img class="" src="img/seguridad.png" width="30px"   >
+								</div>
+								<p class="mb-0" style="">&nbsp;  Vigilancia 24/7    </p>
 							</div>
-							<!--<i class="bi bi-check2-circle fs-3 text-primary"></i> --> &nbsp;   Vigilancia 24/7   
+						</div>
+						<div class="col mb-2 scroll-content fadeTop">
+							<div class="d-flex align-items-center"> 
+								<div class="bg-warning p-2"  style="border-radius: 100px; ">
+									<img class="" src="img/camara-de-seguridad.png" width="30px"   >
+								</div>
+								<p class="mb-0" style="">&nbsp;  Barda perimetral      </p>
 							</div>
+						</div>
+						<div class="col mb-2 scroll-content fadeTop">
+							<div class="d-flex align-items-center"> 
+								<div class="bg-warning p-2"  style="border-radius: 100px; ">
+									<img class="" src="img/policia.png" width="30px"   >
+								</div>
+								<p class="mb-0" style="">&nbsp; Guardias    </p>
+							</div>
+						</div>
+						<div class="col mb-2 scroll-content fadeTop">
+							<div class="d-flex align-items-center"> 
+								<div class="bg-warning p-2"  style="border-radius: 100px; ">
+									<img class="" src="img/camara-de-seguridad.png" width="30px"   >
+								</div>
+								<p class="mb-0" style="">&nbsp; Circuito Cerrado   </p>
+							</div>
+						</div>
+						<!--
 						<div class="col mb-2 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Barda perimetral   </div>
 						<div class="col mb-2 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Guardias    </div>
-						<div class="col mb-2 scroll-content fadeTop">  <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Circuito Cerrado  </div>
+						<div class="col mb-2 scroll-content fadeTop">  <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Circuito Cerrado  </div>-->
 					</div>
 				</div>
 				<div class="col d-none d-lg-block">
@@ -434,13 +463,22 @@
 					<h3 class=" mb-4 mb-lg-4 scroll-content fadeTop "> Financiamiento al alcance de tu bolsillo </h3>
 					<div class="d-flex" style="margin: 0 auto;" >
 						<div class="row row-cols-1 row-cols-lg-1 h4 fw-light  ms-0 ms-lg-4" >
-							<div class="col mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;  Sin revisión de buró de crédito </div>
+							<div class="col mb-2 scroll-content fadeTop">
+								<div class="d-flex align-items-center"> 
+									<div class="bg-warning p-2"  style="border-radius: 100px; ">
+										<img class="" src="img/dinero.png" width="30px"   >
+									</div>
+									<p class="mb-0" style="">&nbsp;  Sin revisión de buró de crédito    </p>
+								</div>
+							</div>
+							<!--<div class="col mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;  Sin revisión de buró de crédito </div>-->
 							<div class="col mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Plazos de hasta 180 meses</div>
 							<div class="col mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Sin comprobación de ingresos </div>
 							<div class="col mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Mensualidades accesibles </div>
 							<div class="col mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Periodos a meses sin intereses </div>
 						</div>
 					</div>
+					<!--
 					<div class="row  pt-2 pb-4 pb-lg-0  scroll-content fadeTop" style="max-width: 280px; margin-left: auto; margin-right: auto;">
 						<div class="col">
 							<img src="img/dinero.png" width="100px" alt="">
@@ -448,7 +486,7 @@
 						<div class="col">
 							<img src="img/prestamo.png" width="100px" alt="">
 						</div>
-					</div>
+					</div>-->
 				</div>
 				<div class="col mb-4 d-none d-lg-block">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -496,7 +534,7 @@
 						<div class="card-body">
 							<p class="text-center h4 mb-4"> 500 m2 </p>
 							<p class="text-center h5 mb-4"> $1,650,000.00 MXN  </p>
-							<p class="text-center"><a  class="btn btn-primary btn-lg " target="_blank" href="https://crm.grupoorve.mx/cotizador/ccprogreso-e1/ccprogreso-e3/ccp-e3-p1?vendedor=Mjg5NA%3D%3D%0A"  style="border-radius: 100px;" > Consultar </a></p>
+							<p class="text-center"> <a  class="btn btn-primary " target="_blank" href="https://crm.grupoorve.mx/cotizador/ccprogreso-e1/ccprogreso-e3/ccp-e3-p1?vendedor=Mjg5NA%3D%3D%0A"> Consultar </a></p>
 						</div>
 					</div>
 				</div>
@@ -520,7 +558,7 @@
 								<p class="mb-0 ms-3"> Disponible </p>
 							</div>
 							<div class="d-flex mb-3 align-items-center scroll-content fadeTop">
-								<div class="bg-warning" style="width: 50px;height: 50px; border-radius: 100px; " > </div>
+								<div class="" style="width: 50px;height: 50px; border-radius: 100px;background-color: orange; " > </div>
 								<p class="mb-0 ms-3"> Apartado </p>
 							</div>
 							<div class="d-flex mb-3 align-items-center scroll-content fadeTop">
@@ -3657,7 +3695,7 @@
 								<rect class="no-outline lot-figure st36 for_sale" x="1385.83" y="832.59" width="59.48" height="21.91" transform="matrix(0.1913 -0.9815 0.9815 0.1913 316.7817 2071.5876)" data-blueprint-lot-id="222748" data-blueprint-id="778" data-id="21063" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="274 Estado: Disponible Sup.: 133.00 m2" />
 								<rect class="no-outline lot-figure st36 for_sale" x="1364.33" y="828.4" width="59.48" height="21.91" transform="matrix(0.1913 -0.9815 0.9815 0.1913 303.5036 2047.0874)" data-blueprint-lot-id="222747" data-blueprint-id="778" data-id="21062" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="273 Estado: Disponible Sup.: 133.00 m2" />
 								<rect class="no-outline lot-figure st36 for_sale" x="1342.82" y="824.21" width="59.48" height="21.91" transform="matrix(0.1913 -0.9815 0.9815 0.1913 290.2256 2022.587)" data-blueprint-lot-id="222893" data-blueprint-id="778" data-id="21061" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="272 Estado: Disponible Sup.: 133.00 m2" />
-								<rect class="no-outline lot-figure st36 reserved" x="1321.31" y="820.02" width="59.48" height="21.91" transform="matrix(0.1913 -0.9815 0.9815 0.1913 276.9476 1998.0867)" data-blueprint-lot-id="222892" data-blueprint-id="778" data-id="21060" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="271&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
+								<rect class="no-outline lot-figure st36 sold" x="1321.31" y="820.02" width="59.48" height="21.91" transform="matrix(0.1913 -0.9815 0.9815 0.1913 276.9476 1998.0867)" data-blueprint-lot-id="222892" data-blueprint-id="778" data-id="21060" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="271&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 sold" d="M1315.94,793.83c-5.94-1.16-11.69,2.72-12.85,8.66l-9.28,47.62l40.8,7.95l11.38-58.38L1315.94,793.83z" data-blueprint-lot-id="222746" data-blueprint-id="778" data-id="21059" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="270&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 249.65 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 for_sale" d="M1463.39,710.95l-14.97,76.81l36.39,7.09c5.94,1.16,11.69-2.72,12.85-8.66c0.05-0.25,0.09-0.5,0.12-0.75
 								c2.48-20.02,4.61-40.08,6.37-60.18l-4.36-4.04c0.09-1.05,0.18-2.09,0.27-3.14L1463.39,710.95z" data-blueprint-lot-id="222875" data-blueprint-id="778" data-id="21042" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="253&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 359.86 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3702,7 +3740,7 @@
 								<rect class="no-outline lot-figure st36 sold" x="1262.93" y="439.89" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 569.2153 1630.1426)" data-blueprint-lot-id="222738" data-blueprint-id="778" data-id="21010" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="221&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1267.12" y="418.39" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 593.7156 1616.8645)" data-blueprint-lot-id="222885" data-blueprint-id="778" data-id="21009" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="220&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 sold" d="M1256.63,402.73l-5.64,28.95l58.38,11.38l3.55-18.2c1.16-5.94-2.72-11.69-8.66-12.85L1256.63,402.73z" data-blueprint-lot-id="222742" data-blueprint-id="778" data-id="21008" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="219&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 176.42 m&lt;sup&gt;2&lt;/sup&gt;" />
-								<path class="no-outline lot-figure st36 for_sale" d="M1420.91,300.8l-6.14,59.16l36.28,3.76c6.02,0.62,11.4-3.75,12.03-9.77l5.01-48.26L1420.91,300.8z" data-blueprint-lot-id="222880" data-blueprint-id="778" data-id="21007" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="218&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 285.27 m&lt;sup&gt;2&lt;/sup&gt;" />
+								<path class="no-outline lot-figure st36 reserved" d="M1420.91,300.8l-6.14,59.16l36.28,3.76c6.02,0.62,11.4-3.75,12.03-9.77l5.01-48.26L1420.91,300.8z" data-blueprint-lot-id="222880" data-blueprint-id="778" data-id="21007" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="218&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 285.27 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1377.2" y="318.29" width="59.48" height="21.91" transform="matrix(0.1032 -0.9947 0.9947 0.1032 934.2802 1694.7065)" data-blueprint-lot-id="222735" data-blueprint-id="778" data-id="21006" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="217&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1355.41" y="316.03" width="59.48" height="21.91" transform="matrix(0.1032 -0.9947 0.9947 0.1032 916.9826 1670.9999)" data-blueprint-lot-id="222734" data-blueprint-id="778" data-id="21005" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="216&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1333.61" y="313.77" width="59.48" height="21.91" transform="matrix(0.1032 -0.9947 0.9947 0.1032 899.6851 1647.2933)" data-blueprint-lot-id="222733" data-blueprint-id="778" data-id="21004" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="215&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3736,7 +3774,7 @@
 								L1040.98,723.72z" data-blueprint-lot-id="222911" data-blueprint-id="778" data-id="20981" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="192&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 180.89 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 reserved" x="1061.31" y="688.91" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 161.7476 1633.6241)" data-blueprint-lot-id="222910" data-blueprint-id="778" data-id="20980" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="191&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1065.5" y="667.41" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 186.248 1620.3461)" data-blueprint-lot-id="222909" data-blueprint-id="778" data-id="20979" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="190&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
-								<rect class="no-outline lot-figure st36 for_sale" x="1069.7" y="645.9" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 210.7483 1607.068)" data-blueprint-lot-id="222757" data-blueprint-id="778" data-id="20978" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="189&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
+								<rect class="no-outline lot-figure st36 reserved" x="1069.7" y="645.9" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 210.7483 1607.068)" data-blueprint-lot-id="222757" data-blueprint-id="778" data-id="20978" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="189&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1073.89" y="624.39" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 235.2486 1593.79)" data-blueprint-lot-id="222756" data-blueprint-id="778" data-id="20977" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="188&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1078.08" y="602.88" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 259.749 1580.512)" data-blueprint-lot-id="222755" data-blueprint-id="778" data-id="20976" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="187&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1082.27" y="581.38" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 284.2493 1567.234)" data-blueprint-lot-id="222754" data-blueprint-id="778" data-id="20975" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="186&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3746,7 +3784,7 @@
 								c5.69,2.05,11.97-0.9,14.02-6.6c0.19-0.53,0.34-1.07,0.45-1.62l6.44-33.05L1088.36,480.64z" data-blueprint-lot-id="222915" data-blueprint-id="778" data-id="20973" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="184&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 248.91 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1108.69" y="445.84" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 438.6505 1483.5558)" data-blueprint-lot-id="222767" data-blueprint-id="778" data-id="20972" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="183&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 reserved" x="1112.88" y="424.33" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 463.1508 1470.2777)" data-blueprint-lot-id="222916" data-blueprint-id="778" data-id="20971" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="182&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
-								<rect class="no-outline lot-figure st36 reserved" x="1117.08" y="402.82" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 487.6511 1456.9998)" data-blueprint-lot-id="222917" data-blueprint-id="778" data-id="20970" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="181&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
+								<rect class="no-outline lot-figure st36 for_sale" x="1117.08" y="402.82" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 487.6511 1456.9998)" data-blueprint-lot-id="222917" data-blueprint-id="778" data-id="20970" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="181&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1121.27" y="381.31" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 512.1515 1443.7217)" data-blueprint-lot-id="222768" data-blueprint-id="778" data-id="20969" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="180&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1125.46" y="359.81" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 536.6518 1430.4437)" data-blueprint-lot-id="222769" data-blueprint-id="778" data-id="20968" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="179&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="1124.22" y="331.71" width="35.34" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 568.6597 1413.0969)" data-blueprint-lot-id="222773" data-blueprint-id="778" data-id="20967" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="178&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 214.51 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3756,7 +3794,7 @@
 								<path class="no-outline lot-figure st36 for_sale" d="M991.27,749.68c-2.14,10.98-9.97,19.98-20.55,23.61l-2.6,13.33l58.38,11.38l7.79-39.94L991.27,749.68z" data-blueprint-lot-id="222759" data-blueprint-id="778" data-id="20964" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="175&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 216.29 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 sold" d="M982.61,712.34c-0.85,4.37,0.2,8.9,2.89,12.45c5.38,7.1,7.48,16.15,5.78,24.9l43.01,8.38l6.7-34.35
 								L982.61,712.34z" data-blueprint-lot-id="222912" data-blueprint-id="778" data-id="20963" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="174&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 180.89 m&lt;sup&gt;2&lt;/sup&gt;" />
-								<rect class="no-outline lot-figure st36 for_sale" x="1002.93" y="677.54" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 125.7073 1567.1232)" data-blueprint-lot-id="222913" data-blueprint-id="778" data-id="20962" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="173&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
+								<rect class="no-outline lot-figure st36 reserved" x="1002.93" y="677.54" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 125.7073 1567.1232)" data-blueprint-lot-id="222913" data-blueprint-id="778" data-id="20962" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="173&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 for_sale" x="1007.13" y="656.03" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 150.2076 1553.8452)" data-blueprint-lot-id="222760" data-blueprint-id="778" data-id="20961" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="172&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 for_sale" x="1011.32" y="634.52" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 174.7079 1540.5671)" data-blueprint-lot-id="222761" data-blueprint-id="778" data-id="20960" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="171&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 for_sale" x="1015.51" y="613.01" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 199.2083 1527.2891)" data-blueprint-lot-id="222762" data-blueprint-id="778" data-id="20959" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="170&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3814,7 +3852,7 @@
 								c1.02,0.25,2.03,0.5,3.04,0.75l7.11-36.5L886.7,419.01z" data-blueprint-lot-id="223005" data-blueprint-id="778" data-id="20917" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="128&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 243.41 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 sold" x="907.03" y="384.2" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 336.0611 1235.7745)" data-blueprint-lot-id="222785" data-blueprint-id="778" data-id="20916" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="127&lt;br/&gt;Estado: Vendido&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 for_sale" x="911.22" y="362.7" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 360.5614 1222.4966)" data-blueprint-lot-id="222934" data-blueprint-id="778" data-id="20915" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="126&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
-								<rect class="no-outline lot-figure st36 for_sale" x="915.41" y="341.19" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 385.0618 1209.2185)" data-blueprint-lot-id="222788" data-blueprint-id="778" data-id="20914" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="125&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
+								<rect class="no-outline lot-figure st36 reserved" x="915.41" y="341.19" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 385.0618 1209.2185)" data-blueprint-lot-id="222788" data-blueprint-id="778" data-id="20914" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="125&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 for_sale" x="916.17" y="315.52" width="30.4" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 414.3047 1193.3702)" data-blueprint-lot-id="222937" data-blueprint-id="778" data-id="20913" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="124&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 184.49 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 for_sale" d="M927.15,293.29c-1.7,8.74-7.05,16.35-14.71,20.9c-3.83,2.28-6.5,6.08-7.35,10.45l58.38,11.38l6.7-34.35
 								L927.15,293.29z" data-blueprint-lot-id="222938" data-blueprint-id="778" data-id="20912" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="123&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 180.89 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3858,7 +3896,7 @@
 								<rect class="no-outline lot-figure st36 for_sale" x="762.79" y="338.81" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 263.9821 1057.4912)" data-blueprint-lot-id="222949" data-blueprint-id="778" data-id="20881" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="92&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 for_sale" x="766.98" y="317.3" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 288.4824 1044.2133)" data-blueprint-lot-id="222948" data-blueprint-id="778" data-id="20880" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="91&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<rect class="no-outline lot-figure st36 for_sale" x="771.18" y="295.79" width="21.91" height="59.48" transform="matrix(0.1913 -0.9815 0.9815 0.1913 312.9827 1030.9352)" data-blueprint-lot-id="222947" data-blueprint-id="778" data-id="20879" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="90&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 133.00 m&lt;sup&gt;2&lt;/sup&gt;" />
-								<path class="no-outline lot-figure st36 for_sale" d="M777.1,277.73c-1.7,8.74-7.05,16.35-14.71,20.9c-3.83,2.28-6.5,6.08-7.35,10.45l58.38,11.38l6.7-34.35
+								<path class="no-outline lot-figure st36 reserved" d="M777.1,277.73c-1.7,8.74-7.05,16.35-14.71,20.9c-3.83,2.28-6.5,6.08-7.35,10.45l58.38,11.38l6.7-34.35
 								L777.1,277.73z" data-blueprint-lot-id="222811" data-blueprint-id="778" data-id="20878" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="89&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 180.89 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 for_sale" d="M769.82,233.26l-2.9,14.87c8.44,7.34,12.32,18.63,10.18,29.6l43.01,8.38l9.1-46.69L769.82,233.26z" data-blueprint-lot-id="222812" data-blueprint-id="778" data-id="20877" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="88&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 241.90 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 for_sale" d="M591.85,671.83l-7.79,39.94l58.38,11.38l2.6-13.33c-8.44-7.34-12.32-18.63-10.18-29.6L591.85,671.83z" data-blueprint-lot-id="222815" data-blueprint-id="778" data-id="20876" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="87&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 216.29 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3949,7 +3987,7 @@
 								<path class="no-outline lot-figure st36 reserved" d="M232.2,459.07c-1.2,8.74-2.3,17.5-3.31,26.26l62.2,7.16c0.95-8.31,2-16.62,3.13-24.91L232.2,459.07z" data-blueprint-lot-id="222861" data-blueprint-id="778" data-id="20807" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="18&lt;br/&gt;Estado: Reservado&lt;br/&gt;Sup.: 164.75 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 for_sale" d="M236.08,432.88c-1.39,8.71-2.68,17.44-3.88,26.18l62.02,8.51c1.14-8.29,2.36-16.57,3.68-24.83L236.08,432.88z
 								" data-blueprint-lot-id="222857" data-blueprint-id="778" data-id="20806" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="17&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 164.75 m&lt;sup&gt;2&lt;/sup&gt;" />
-								<path class="no-outline lot-figure st36 for_sale" d="M240.53,406.79c-1.58,8.68-3.06,17.38-4.45,26.09l61.82,9.86c1.32-8.26,2.72-16.51,4.22-24.74L240.53,406.79z
+								<path class="no-outline lot-figure st36 reserved" d="M240.53,406.79c-1.58,8.68-3.06,17.38-4.45,26.09l61.82,9.86c1.32-8.26,2.72-16.51,4.22-24.74L240.53,406.79z
 								" data-blueprint-lot-id="222995" data-blueprint-id="778" data-id="20805" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="16&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 164.75 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 for_sale" d="M245.56,380.81c-1.77,8.64-3.44,17.31-5.02,25.99L302.13,418c1.5-8.23,3.09-16.45,4.76-24.65L245.56,380.81z" data-blueprint-lot-id="222992" data-blueprint-id="778" data-id="20804" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="15&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 164.75 m&lt;sup&gt;2&lt;/sup&gt;" />
 								<path class="no-outline lot-figure st36 for_sale" d="M251.15,354.93c-1.96,8.6-3.82,17.23-5.59,25.87l61.34,12.55c1.68-8.2,3.44-16.38,5.3-24.54L251.15,354.93z" data-blueprint-lot-id="222994" data-blueprint-id="778" data-id="20803" data-project_id="20" data-stage_id="207" rel="tooltip" data-html="true" data-placement="top" title="14&lt;br/&gt;Estado: Disponible&lt;br/&gt;Sup.: 164.75 m&lt;sup&gt;2&lt;/sup&gt;" />
@@ -3971,192 +4009,6 @@
 							</g>
 							</svg>
 						</div>
-	<!--Modals-->
-	<!--
-	<div class="modal fade" id="chepina-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" id="modal-size" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="lot-title"></h5>
-					<button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-						<span aria-hidden="true">&times;</span>
-					</button>
-				</div>
-				<div class="modal-body">
-					<div class="row">
-						<div id="chepina-container" class="col-md-6">
-							<img id="chepina" src="" alt="" class="img-fluid">
-						</div>
-						<div id="form-container" class="col-lg-6 col-md-12 text-left">
-							<form id="quotation-form" data-remote="true" enctype="multipart/form-data" action="/cotizador/ccprogreso-e1/ccprogreso-e3/ccp-e3-p1" accept-charset="UTF-8" data-remote="true" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
-								<input type="hidden" name="vendedor" id="vendedor" value="Mjg5NA==" />
-								<input type="hidden" name="authenticity_token" id="authenticity_token" value="jbLJM5hxZ+uUlNZW+P7SG34LEYPpzVBqsxffr5TuEAcTj6yyWsSC6G8C9EAIrdXM1IWRaaVr57Z6RSki5hEJlw==" />
-								<input type="hidden" name="total_periods" id="total_periods" value="180" />
-								<div class="form-group">
-									<label class="mt-2" for="total_payments">Plazo:</label>
-									<div class="vertical-align">
-										<div class="input-group">
-											<input type="number" name="total_payments" id="total_payments" value="180" min="1" step="1" maxlength="3" class="form-control text-right" onchange="if(this.value) {$(this.form).submit();}" />
-											<div class="input-group-append">
-												<div class="input-group-text input-text-right"> mes(es)</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label class="mt-2" for="payment_way">Método de calculo de enganche</label>
-									<div class="vertical-align">
-										<select name="payment_way" id="payment_way" onchange="if(this.value) {$(this.form).submit();}" class="form-control"><option value="amount">Monto</option>
-											<option value="percentage">Porcentaje</option>
-										</select>
-									</div>
-								</div>
-								<div id="down_payment_amount_container" class="form-group">
-									<label class="mt-2" for="down_payment_amount">Cantidad de enganche</label>
-									<div class="vertical-align">
-										<div class="input-group">
-											<input type="number" name="down_payment_amount" id="down_payment_amount" value="0" step="0.5" class="form-control text-right" onchange="if(this.value) {$(this.form).submit();}" />
-											<div class="input-group-append" id="down_payment_percentage_sign">
-												<div class="input-group-text input-text-right">$</div>
-											</div>
-											<div class="invalid-feedback"> Puede ser del <i id="min_down_payment"></i>% hasta el <i id="max_down_payment"></i>% del	precio del .
-											</div>
-										</div>
-									</div>
-								</div>
-				<div class="form-group wrapper-last-payment">
-				  <label class="mt-2" for="min_last_payment_payment_way">Método de calculo de Contra entrega</label>
-				  <div class="vertical-align">
-					<select name="min_last_payment_payment_way" id="min_last_payment_payment_way" onchange="if(this.value) {$(this.form).submit();}" class="form-control"><option value="percentage">Porcentaje</option>
-<option value="amount">Monto</option></select>
-				  </div>
-				</div>
-
-				<div id="last_payment_amount_container" class="form-group wrapper-last-payment">
-					<label class="mt-2" for="min_last_payment_amount">Cantidad de Contra entrega</label>
-					<div class="vertical-align">
-					<div class="input-group">
-					  <input type="number" name="min_last_payment_amount" id="min_last_payment_amount" value="0" step="0.5" class="form-control text-right" onchange="if(this.value) {$(this.form).submit();}" />
-					  <div class="input-group-append" id="last_payment_percentage_sign">
-						<div class="input-group-text input-text-right">$</div>
-					  </div>
-					  <div id="last_payment_error" class="invalid-feedback">
-						Puede ser del <i id="min_last_payment"></i>%
-						hasta el <i id="max_last_payment"></i>% del
-						precio del .
-					  </div>
-					</div>
-					</div>
-				</div>
-
-				<div class="form-group wrapper-last-payment">
-				  <label for="last_payment_amount">Contra entrega</label>
-				  <b id="last_payment"></b>
-				</div>
-
-				<div class="form-group" id="wrapper-down-payment">
-				  <label for="down_payment_amount">Enganche: </label>
-				  <b id="down_payment"></b>
-				</div>
-
-				<div class="form-group" id="wrapper-initial-payment">
-				  <label>Apartado:</label>
-				  <b id="initial_payment"></b>
-				</div>
-
-				<div class="form-group">
-				  <label>Saldo de enganche:</label>
-				  <b id="down_payment_to_differ"></b>
-				</div>
-
-				<div class="form-group" id="wrapper-first-payment">
-				  <label>Fecha límite para el pago de apartado:</label>
-				  <b id="first_payment"></b>
-				</div>
-
-				<div class="form-group" id="wrapper-second-payment">
-				  <label>Fecha límite para el pago de enganche:</label>
-				  <b id="second_payment"></b>
-				</div>
-
-				<div class="form-group">
-				  <label>Precio de lista:</label>
-				  <b id="price"></b>
-				</div>
-
-				<div class="form-group" id="wrapper-final-price">Precio final:</label>
-				  <b id="final-price"> $0.00</b>
-				</div>
-
-				<div class="d-flex flex-wrap justify-content-between">
-				  <p class="text-left vertical-align m-0 py-3 color-primary">Esquema de pagos</p>
-				</div>
-
-				<div id="updates-table">
-				  
-				</div>
-
-				<hr class="divider">
-
-				<section class="">
-				  <h5 class="text-center">Datos de envío</h5>
-				  <p class="my-4 text-center">Al ingresar sus datos de contacto se le enviará a su correo la cotización generada
-					con base al número de plazos ingresado.</p>
-				  <div class="row">
-					<div class="form-group col-sm-12 col-md-6">
-					  <label for="name">Nombre</label>
-					  <div class="vertical-align">
-						<input type="text" name="name" id="name" class="form-control" />
-						<div class="invalid-feedback">
-						  Este campo es obligatorio
-						</div>
-					  </div>
-					</div>
-					<div class="form-group col-sm-12 col-md-6">
-					  <label for="first_surname">Primer Apellido</label>
-					  <div class="vertical-align">
-						<input type="text" name="first_surname" id="first_surname" class="form-control" />
-						<div class="invalid-feedback">
-						  Este campo es obligatorio
-						</div>
-					  </div>
-					</div>
-					<div class="form-group col-sm-12 col-md-6">
-					  <label for="second_surname">Segundo Apellido</label>
-					  <div class="vertical-align">
-						<input type="text" name="second_surname" id="second_surname" class="form-control" />
-						<div class="invalid-feedback">
-						  Este campo es obligatorio
-						</div>
-					  </div>
-					</div>
-					<div class="form-group col-sm-12 col-md-6">
-					  <label for="email">Correo</label>
-					  <div class="vertical-align">
-						<input type="email" name="email" id="email" class="form-control" />
-						<div class="invalid-feedback">
-						  Este campo es obligatorio
-						</div>
-					  </div>
-					</div>
-					<div class="form-group col-sm-12 col-md-6">
-					  <label for="main_phone">Teléfono Principal</label>
-					  <div class="vertical-align">
-						<input type="tel" name="main_phone" id="main_phone" class="form-control" title="Debe contener solo números" />
-						<div class="invalid-feedback">
-						  Los número telefónicos deben ser a 10 dígitos
-						</div>
-					  </div>
-					</div>
-				  </div>
-				</section>
-
-				<div class="actions text-center pt-3 ">
-				  <button name="button" type="button" id="send_quote" class="btn btn-primary quotation-button-size text-center">Enviar Cotización</button>
-				</div>
-</form>              </div>
-		  </div>
-		-->
 		</div>
 	  </div>
 	</div>
@@ -4178,8 +4030,8 @@
 		</div>
 	</div>
 	<!--seccion8-->
-	<div class="container-fluid  py-5 ">
-		<div class="container py-5">
+	<div class="container-fluid  pb-5 ">
+		<div class="container pb-5">
 			<h2 class="text-center h1 montserrat text-uppercase" style="font-weight: 700;">Preventa</h2>
 		</div>
 	</div>
@@ -4205,9 +4057,9 @@
 			</style>
 			<div class="row row-cols-1 row-cols-lg-3" >
 				<div class="col mb-5 mb-lg-0 ">
-					<div class="d-flex justify-content-center align-items-center carta scroll-content fadeTop"   style="  margin: 0 auto;">
+					<div class=" card d-flex justify-content-center align-items-center carta scroll-content fadeTop h-100 p-3 shadow border border-1 border-warning"   style="width: 20rem;  margin: 0 auto; ">
 						<div>
-							<div class="mb-3 d-flex justify-content-center align-items-center bg-warning" style="width: 100px; height: 100px; border-radius: 200px; margin: 0 auto; " >
+							<div class="mb-3 d-flex justify-content-center align-items-center bg-warning " style="width: 100px; height: 100px; border-radius: 200px; margin: 0 auto; " >
 								<div class="d-flex justify-content-center"  >
 									<img class="lazyload" data-src="img/tienda-en-linea.png" width="60%" height="auto" alt="" style="margin: 0 auto;" >
 								</div>
@@ -4218,7 +4070,7 @@
 					</div> 
 				</div>
 				<div class="col mb-5 mb-lg-0 ">
-					<div class=" d-flex justify-content-center align-items-center  carta scroll-content fadeTop"   style=" margin: 0 auto;">
+					<div class="card d-flex justify-content-center align-items-center  carta scroll-content fadeTop h-100 p-3 shadow border border-1 border-warning"   style="width: 20rem; margin: 0 auto;">
 						<div>
 							<div class="mb-3 d-flex justify-content-center align-items-center bg-warning" style="width: 100px; height: 100px; border-radius: 200px; margin: 0 auto; " >
 								<div class="d-flex justify-content-center"  >
@@ -4231,7 +4083,7 @@
 					</div> 
 				</div>
 				<div class="col mb-5 mb-lg-0">
-					<div class=" d-flex justify-content-center align-items-center  carta scroll-content fadeTop"   style=" margin: 0 auto;">
+					<div class="card d-flex justify-content-center align-items-center  carta scroll-content fadeTop h-100 p-3 shadow border border-1 border-warning"   style="width: 20rem; margin: 0 auto;">
 						<div>
 							<div class="mb-3 d-flex justify-content-center align-items-center bg-warning" style="width: 100px; height: 100px; border-radius: 200px; margin: 0 auto; " >
 								<div class="d-flex justify-content-center"  >
@@ -4312,7 +4164,20 @@
 	<!--seccion8-->
 	<div class="container-fluid  py-5 ">
 		<div class="container py-5">
-			<h2 class="text-center h1 text-uppercase montserrat" style="font-weight: 700;" >ORVE</h2>
+			<h2 class="text-center h1 text-uppercase montserrat mb-5" style="font-weight: 700;" >ORVE</h2>
+			<div class="row row-cols-1 row-cols-lg-2">
+				<div class="col">
+					<p class="h4 fw-light mb-4">Somos una empresa dedicada a nuestros clientes, conformada por especialistas patrimoniales, financieros y jurídicos con la misión de brindar el mejor servicio a toda persona que busca tomar la mejor decisión para invertir. <br><br> Tenemos un compromiso con las familias mexicanas de garantizar el crecimiento de su inversión en un patrimonio seguro.</p>
+				</div>
+				<div class="col">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/-daylm0u_Fk" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+
+
 		</div>
 	</div>
 	<!--footer-->

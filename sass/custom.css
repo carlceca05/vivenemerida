@@ -106,6 +106,41 @@
   z-index: 19;
 }
 
+.movi2 {
+  position: absolute;
+  right: -20%;
+  bottom: -20%;
+  z-index: 2;
+}
+
+.movi3 {
+  position: absolute;
+  left: -20%;
+  bottom: -50%;
+  z-index: 180;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 2000px) {
+  .movi {
+    position: absolute;
+    left: 0%;
+    top: -10%;
+    z-index: 1;
+  }
+  .sombreado {
+    -webkit-box-shadow: 1px 1px 10px gray;
+    box-shadow: 1px 1px 10px gray;
+    z-index: 9;
+    background-color: #fff;
+    z-index: 9;
+    background-color: #fff;
+  }
+  .movidito {
+    position: absolute;
+    top: 50px;
+  }
+}
+
 @media only screen and (min-width: 100px) and (max-width: 900px) {
   .fondo {
     background-image: url(../img/image2.png);

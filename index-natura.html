@@ -1,61 +1,104 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title> Vive en Mérida </title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta charset="utf-8">
-	<meta name="description" content="Depas en Merida     ">
-	<meta name="keywords" content="   ">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+        
+    <title>Vive en Mérida | Terrenos en Venta </title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <!--favicon-->
     <link rel="icon" type="image/ico" href="img/favicon.png">
-	<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-144.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57.png">
-	
-	<link rel="preload" as="style" type="text/css" href="sass/custom.css" onload="this.onload=null;this.rel='stylesheet'"> 
-	<link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css" onload="this.onload=null;this.rel='stylesheet'">
-	
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57.png">
+    <!--estilos-->
+    <link rel="preload" as="style" type="text/css" href="sass/custom.css"
+        onload="this.onload=null;this.rel='stylesheet'">
 
-	<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+        onload="this.onload=null;this.rel='stylesheet'">
 
-	
-	<style>
-		.montserrat{
-			font-family: 'Montserrat', sans-serif;
-		}
-.fadeTop {
-    opacity: 0; 
-    transform: translate(0, 30vh);
-    transition: all 1.4s;
-}
-.visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-		.img-enlace{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 19;
-}
-		@media only screen and (min-width:900px) and (max-width:2000px){
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-		}
-		@media only screen and (min-width:100px) and (max-width:900px){
-			
-		}	
-		
-	</style>
-	
+    <style>
+        body{
+            font-family: "Raleway", sans-serif;
+        }
+        @media only screen and (min-width:900px) and (max-width:2000px) {
+            .aparece {
+                display: none;
+            }
+        }
+        @media only screen and (min-width:100px) and (max-width:900px) {
+            .desaparece {
+                display: none;
+            }
+        }
+        
+        }
+        .fadeTop {
+                        opacity: 0; 
+                        transform: translate(0, 30vh);
+                        transition: all 3s;
+                    }
+                    .visible {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
+
+        /*prueba*/
+        .fondazo{
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            transition: all .1s ease-out; 
+            background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-1.png');
+            /*background-color: blue;*/
+            -webkit-animation: fondoso 20s infinite linear;
+            animation: fondoso 20s infinite linear; 
+            -moz-animation: fondoso 20s infinite linear;
+        }
+        @keyframes fondoso{
+            0%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-1.png');                
+            }
+            25%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-1.png');
+            }
+            26%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-2.png');
+            }
+            50%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-2.png');
+            }
+            51%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-3.png');
+            }
+            75%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-3.png');
+            }
+            76%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-4.png');
+            }
+            100%{
+                background-image:linear-gradient(90deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.4) 35%), url('img/slider-1.png');
+            }
+        }
+
+
+
+
+    </style>
 </head>
+
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-warning sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
 		<div class="container py-2">
 			<a class="navbar-brand d-block d-lg-none" href="#">
 				<img src="img/logo-viveenmerida.png" width="80px" alt="">
@@ -84,26 +127,33 @@
 			</div>
 		</div>
 	</nav>
-	<!-- seccion 1 portada-->
-	<div class="jumbotron-fluid fondo  ">
-		
-		<div class="container py-5"  style="height: 650px;">
-			<div class="row row-cols-1 row-cols-lg-2 py-5">
-				<div class="col bg-light"  style="z-index: 2;">
-					<h1 class="mt-4 mb-4  text-uppercase montserrat" style="font-weight:800; line-height: 1.1em;">Terrenos <br>Residenciales<br> en Mérida </h1>
-					<h3 class="mb-5 "  > Una comunidad planeada para ti, en la zona de mayor crecimiento y proyección en Mérida  </h3>
-					<button type="button"  class="btn btn-primary btn-lg shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 100px;">
-						Recorrido Virtual
-					</button>
-				</div>
-				
-				<div class="col">
-					<div>	</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Modal -->
+    
+    <!-- seccion 1 portada-->
+    <div class="container-fluid py-5 position-relative fondazo " style="height: 680px;"  >
+        <div class=" position-absolute w-100"  style="top: 0; height: 200px; left: 0;  "   >  
+            <div class="">
+
+            </div>
+        </div>
+        <div class="container py-0 py-lg-5 " >
+            <div class="row pt-4 pt-lg-5" >
+                <div class="col-md-6 col-sm-12 col-xs-12 " style="z-index: 99;">
+                    <div class="px-4 py-5 bg-light  shadow" >
+                        <h1 class="mb-4 text-uppercase" style="font-size: 55px;font-weight: 800; line-height: 1em; " >Terrenos <br>Residenciales<br> en Mérida </h1>
+                        <h2 class="mb-4" style="font-size: 16px;" >Una comunidad planeada para ti, en la zona de mayor crecimiento y proyección en Mérida </h2>
+                        <button type="button"  class="btn btn-primary  shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 100px;"> Recorrido Virtual</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 position-relative" >
+                    
+                </div>
+                
+            </div>
+            <p class="text-center mt-5 mb-0 "  > <a class="text-decoration-none text-white" href="" style="font-size: 20px;"> VER MÁS </a></p>
+            <p class="text-center"><i class="bi bi-chevron-compact-down text-white fs-1" ></i></p>
+        </div>
+    </div>
+    <!-- Modal -->
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered modal-lgmodal-xl"  style="max-width: 1000px;">
 		<div class="modal-content">
@@ -123,152 +173,194 @@
 		</div>
 		</div>
 	</div>
-	<!--seccion1-->
-	<div class="container-fluid  pt-5 pb-3 pb-lg-5 fondo3">
-		<div class="container pt-5 pb-3 pb-lg-5">
-			<h2 class="mb-4 mb-lg-3 text-center text-lg-start text-uppercase montserrat" style="font-weight: 700;" >Ciudad Central</h2>
-			<div class="row row-cols-1 row-cols-lg-2">
-				<div class="col py-0 py-lg-4">
-					<p class=" fw-light text-center text-lg-start "> <strong class="fw-normal text-primary"> Innovador proyecto residencial al noroeste de Mérida</strong>, la zona más privilegiada para invertir y crear tu patrimonio con las mejores comodidades.  </p>
-				</div>
-				<div class="col d-block d-lg-none">
-					<div class="">
-						<img class=" lazyload" data-src="img/fondo3-moviles.png" width="100%" alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<p class="bg-warning py-4 text-center scroll-content fadeTop"> <strong class="fw-bold"> Terrenos Premium</strong> con todos los servicios necesarios y amenidades de ensueño  </p>
-	<!--seccion3-->
-	<div class="container-fluid pt-5">
-		<div class="container pt-5">
-			<div class="row">
-				<div class="col-12 col-lg-5 d-none d-lg-block">
-					<div class="d-flex justify-content-center mb-4">
-						<img class="img-fluid lazyload scroll-content fadeTop shadow rounded" data-src="img/casaclub-ciudad-central-orve.jpg"  alt="">
-					</div>
-				</div>
-				<div class="col-12 col-lg-7 ">
-					<div >
-						<h3 class="text-center text-lg-end   mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Servicios Intramuros</h3>
-						<p class=" fw-light text-center text-lg-end scroll-content fadeTop"> Los lotes se encuentran divididos en privadas asegurando <strong class="fw-normal text-primary">comodidad y confort</strong>.<br><br>A lo largo de Ciudad Central se distribuyen <strong class="fw-bold"> Casas Club</strong> que contarán con:  </p>
-					</div>
-				</div>
-				<div class="col-12 col-lg-5 d-block d-lg-none mt-3 mb-3">
-					<div class="d-flex justify-content-center mb-4">
-						<img class="img-fluid lazyload scroll-content fadeTop" data-src="img/casaclub-ciudad-central-orve.jpg"  alt="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid">
-		<div class="container pb-4 ">
-			<div class="row row-cols-1 row-cols-lg-3 ">
-				<div class="col d-block d-lg-flex justify-content-center">
-					<!--<div class="mb-4">
-						<img class="img-fluid lazyload" data-src="img/cancha-cuadrada.jpg" width="170px" alt="" style="border-radius: 250px;">
-					</div>-->
-					<ul class="list-unstyled h5 fw-light ">
-						<!--<li class="mb-3 scroll-content fadeTop">  <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Bar</li>
-						<li class="mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Alberca</li>
-						<li class="mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Cancha deportiva</li>
-						-->
-						<li class="mb-3 scroll-content fadeTop">
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/martini.png" width="30px">
-									<!--<i class="fa-solid fa-martini-glass text-primary"></i>-->
-								</div>
-								<p class="mb-0" >&nbsp;  Bar </p>
-							</div> 
-						</li>
-						<li class="mb-3 scroll-content fadeTop"> 
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px;">
-									<img class="" src="img/piscina.png" width="30px">
-									<!--<i class="fa-solid fa-person-swimming text-primary"></i>-->
-								</div>
-								<p class="mb-0" style="">&nbsp; Alberca </p>
-							</div> 
-						</li>
-						<li class="mb-3 scroll-content fadeTop">  
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px;">
-									<img class="" src="img/cancha-de-baloncesto.png" width="30px"   >
-									<!--<i class="fa-solid fa-baseball text-primary"></i>-->
-								</div>
-								<p class="mb-0" style="">&nbsp; Cancha Deportiva </p>
-							</div> 
-						</li>
-						
-					</ul>
-				</div>
-				<div class="col d-block d-lg-flex justify-content-center">
-					<ul class="list-unstyled  fw-light">
-						<!--<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;GYM</li>
-						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Lobby</li>
-						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Juegos infantiles</li>-->
-						<li class="mb-3 scroll-content fadeTop">   
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/pesa.png" width="30px"   >
-									<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
-								</div>
-								<p class="mb-0">&nbsp; GYM </p>
-							</div> 
-						</li>
-						<li class="mb-3 scroll-content fadeTop"> <div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/lobby.png" width="30px">
-							</div>
-							<p class="mb-0">&nbsp;Lobby </p>
-						</div>   </li>
-						<li class="mb-3 scroll-content fadeTop"> <div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/juegos-infantiles.png" width="30px">
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
-							</div>
-							<p class="mb-0" >&nbsp;Juegos infantiles </p>
-						</div>   </li>
-					</ul>
-				</div>
-				<div class="col d-block d-lg-flex justify-content-center">
-					<ul class="list-unstyled ">
-						<!--<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;  Tienda</li>
-						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Terraza</li>
-						<li class="mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;	 Salón de eventos</li>-->
-						<li class="mb-3 scroll-content fadeTop"><div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/tienda.png" width="30px"   >
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
-							</div>
-							<p class="mb-0">&nbsp;  Tienda</p>
-						</div>  </li>
-						<li class="mb-3 scroll-content fadeTop"> <div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/terraza.png" width="30px"   >
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
-							</div>
-							<p class="mb-0"> &nbsp; Terraza </p>
-						</div>  </li>
-						<li class="mb-3 scroll-content fadeTop"><div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/sala-eventos.png" width="30px"   >
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
-							</div>
-							<p class="mb-0">&nbsp;	 Salón de eventos </p>
-						</div>  </li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="">
-		<img class="lazyload scroll-content fadeTop" data-src="img/servicios.png" width="100%" style="" alt="">
-	</div>
-	<!--seccion4-->
+    <!-- seccion 1 portada-->
+    <div class="container-fluid py-5 position-relative bg-light" >
+        <div class=" position-absolute w-100"  style="top: 0; height: 200px; left: 0;  "   >  </div>
+        <div class="container py-0 py-lg-0 " >
+            <div class="row pt-4 pt-lg-5" >
+                <div class="col-md-6 col-sm-12 col-xs-12 position-relative" >
+                    <div class="movi scroll-content fadeTop" style=" " >
+                        <img class="lazyload shadow img-fluid " data-src="img/portada-inicio-ciudad-central.webp" width="" alt="" title=""  >
+                    </div>
+                    <div class="movi2 desaparece   scroll-content fadeTop"  >
+                        <img class="lazyload  " data-src="img/cancha-cuadrada.jpg" width="300px" alt="" title="" >
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 " style="z-index: 99;">
+                    <div class="px-4 py-5 bg-warning  shadow scroll-content fadeTop" >
+                        <h2 class="h1 mb-3 text-uppercase" style="font-weight: 700; " >Ciudad Central </h2>
+                        <p>Innovador proyecto residencial al noroeste de Mérida</strong>, la zona más privilegiada para invertir y crear tu patrimonio con las mejores comodidades.  </p>
+                            <button type="button"  class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 100px;">
+                                Recorrido Virtual
+                            </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- seccion 2 video-->
+    <div class="container-fluid py-5 bg-light" >
+        <div class="container py-5 ">
+            <div class="row ">
+               
+        
+          
+                <div class="col-md-4 col-sm-12 col-xs-12 d-flex ">
+                    <div class="position-relative " style="bottom: 0; margin-bottom: 0;margin-top: auto;  " >
+                        <i  class="bi bi-quote movidonsio text-warning " style="font-size: 100px; line-height: 0em;"></i>
+                        <p class="scroll-content fadeTop"> Compre mi primer terreno en Ciudad Central y solo me tuve que pagar $1000 para apartarlo, muy fácil. </p>
+                        <p class="text-end fw-bold mb-0 scroll-content fadeTop"> Ramon montes <br> Ciudad de México  </p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-xs-12 pt-0 pt-lg-4">
+                    <div>
+                        <img class="shadow scroll-content fadeTop" src="img/jaime-perez.png"  width="100%"  alt="">
+                    </div>
+                </div>
+                <style>
+                    .movidonsio{
+                        /*position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        opacity: 0.4;*/
+                    }
+                    .movidito{
+                        position: absolute;
+                        top: 0;
+                        left: -20%;
+                    }
+                </style>
+                <div class="col-md-4 col-sm-12 col-xs-12 pt-0 pt-lg-4 position-relative">
+                    <div class=""> <!--movidito-->
+                        <h2 class=" mb-4  scroll-content fadeTop" style="font-size: 48px;font-weight: 600; line-height: 1em;">¡Encuentra tu próximo terreno en Mérida!</h2>
+                    </div>
+                    
+                    <p class="scroll-content fadeTop" style="margin-top: 50px;"> Los lotes se encuentran divididos en privadas asegurando comodidad y confort.<br>
+
+                        A lo largo de Ciudad Central se distribuyen Casas Club que contarán con:   </p>
+                    <p class="scroll-content fadeTop"> </p>
+                   
+                    <p class="mt-3 scroll-content fadeTop"><a class="text-decoration-none text-dark pb-2 border-bottom border-2 border-dark" href=""
+                            style="font-size: px; font-weight: 400; border-radius: 0px;"> ¡Aparta hoy!</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- seccion 1 portada-->
+    <div class="container-fluid  pt-5 position-relative bg-light"  style="padding-bottom: 250px;">
+        <div class=" position-absolute w-100"  style="top: 0; height: 200px; left: 0;  "   >  </div>
+        <div class="container py-0 py-lg-0 " >
+            <div class="row pt-4 pt-lg-5" >
+                <div class="col-md-6 col-sm-12 col-xs-12 " style="z-index: 99;">
+                    <div class="px-4 py-5 bg-warning  shadow scroll-content fadeTop" >
+                        <h2 class="h1 mb-3 text-uppercase" style="font-weight: 700; " >Urbanismo y vanguardismo</h2>
+                        <p> Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega <br> <br>Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales  </p>
+                            <button type="button"  class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 100px;">
+                                Recorrido Virtual
+                            </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 position-relative" >
+                    <div class="movi scroll-content fadeTop" style=" " >
+                        <img class="lazyload shadow img-fluid " data-src="img/slider-3.png" width="" alt="" title=""  >
+                    </div>
+                    <div class="movi3 desaparece scroll-content fadeTop"  >
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/mJTROq99hos" title="YouTube video player" width="500"  height="300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- seccion 3 iconos-->
+    <div class="container-fluid py-5 bg-light ">
+        <div class="container py-5">
+           
+            <div class="row ">
+                
+                <div class="col-4  d-flex  align-items-center     ">
+                    <div class=""> 
+                        <h2 class=" mb-4 scroll-content fadeTop" style="font-size: 50px; line-height: 0.9em; font-weight: 600;">Beneficios de vivir en Ciudad Central   </h2>
+                        <p class=" scroll-content fadeTop ">A lo largo de Ciudad Central se distribuyen Casas Club que contarán con:  </p>
+                        <p class="scroll-content fadeTop"><a class="btn btn-primary mb-4"   href=""> ¡Aparta hoy!   </a></p>
+                    </div>
+                   
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <style>
+                            .bajon{
+                                margin-top: 60px;
+                            }
+                            .subidon{
+                                margin-top: -60px;
+                            }
+
+                        </style> 
+                        <div class="col-lg-4 col-md-12 col-sm-12   mb-3 bajon h-100 scroll-content fadeTop">
+
+                            <div class="shadow border border-1 border-warning p-3 mb-4">
+                                <p><i class="fa-solid fa-martini-glass fs-3 text-white  bg-primary p-2"></i></p>
+                                <h5 class="">Bar</h5>
+                                <p class="small">Natura cuenta con un sistema automatizado de entrega.</p>
+                            </div>
+
+                            <div class="shadow p-3 mb-4 border border-1 border-warning">
+                                <p><i class="fa-solid fa-person-swimming fs-3 text-white bg-primary p-2"></i></p>
+                                <h5 class="">Alberca</h5>
+                                <p class="small">Vende con ayuda de un crédito, impulsa tu negocio y paga en 21 días.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 col-sm-12  h-100  mb-3 scroll-content fadeTop">
+
+                            <div class="shadow p-3 mb-4 border border-1 border-warning">
+                                <p><i class="bi bi-graph-up fs-3 text-white bg-primary p-2"></i></p>
+                                <h6 class="">Crecimiento y desarrollo</h6>
+                                <p class="small">Contamos con una red de relaciones con la que puedes incrementar tus
+                                    ingresos.</p>
+                            </div>
+
+                            <div class="shadow p-3 mb-4 border border-1 border-warning">
+                                <p><i class="bi bi-easel fs-3 text-white bg-primary p-2"></i></p>
+                                <h6 class="mb-0">Capacitación y seguimiento</h6>
+                                <p class="small"> Recibe acceso a cursos y entrenamientos gratuitos. </p>
+                            </div>
+
+                        </div>
+                       
+                        <div class="col-lg-4 col-md-12 col-sm-12 mb-3 h-100 subidon scroll-content fadeTop">
+
+                            <div class="shadow p-3 mb-4 bg-warning">
+                                <p><i class="bi bi-gift fs-3 text-white bg-primary p-2"></i></p>
+                                <h6 class="">Premios y reconocimientos</h6>
+                                <p class="small">Gana productos, reconocimientos, premios y viajes. </p>
+                            </div>
+
+                            <div class="shadow p-3 mb-4 bg-warning">
+                                <p><i class="bi bi-award fs-3 text-white  bg-primary p-2"></i></p>
+                                <h6 class=" ">Productos de calidad</h6>
+                                <p class="small">Productos de origen vegetal, empaques reciclables y 100% sustentable.
+                                </p>
+                            </div>
+                      
+                            
+                       
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--seccion4-->
 	<div class="container-fluid bg-warning py-4 scroll-content fadeTop">
 		<div class="container py-2">
 			<div class="row  ">
@@ -288,300 +380,223 @@
 			 
 		</div>
 	</div>
+    <!-- seccion 1 portada-->
+    <div class="container-fluid  pt-5 position-relative bg-light"  style="padding-bottom: 250px;">
+        <div class=" position-absolute w-100"  style="top: 0; height: 200px; left: 0;  "   >  </div>
+        <div class="container py-0 py-lg-0 " >
+            <div class="row pt-4 pt-lg-5" >
+                <div class="col-md-6 col-sm-12 col-xs-12 " style="z-index: 99;">
+                    <div class="px-4 py-5 bg-warning  shadow scroll-content fadeTop" >
+                        <h2 class="h1 mb-3 text-uppercase" style="font-weight: 700; " >Urbanismo y vanguardismo</h2>
+                        <p> Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega <br> <br>Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales  </p>
+                            <button type="button"  class="btn btn-primary shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 100px;">
+                                Recorrido Virtual
+                            </button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 position-relative" >
+                    <div class="movi scroll-content fadeTop" style=" " >
+                        <img class="lazyload shadow img-fluid " data-src="img/slider-3.png" width="" alt="" title=""  >
+                    </div>
+                    <div class="movi3 desaparece scroll-content fadeTop"  >
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/mJTROq99hos" title="YouTube video player" width="500"  height="300" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--carrusel-->
+    <div class="jumbotron-fluid bg-light">
+        <div class="container py-5">
+            <h2 class="text-center mb-3  scroll-content fadeTop" style="font-size: 50px;font-weight: 600;">  Master Plan </h2>
+            <p class="text-center scroll-content fadeTop" style=""> Macro-fraccionamiento de 920 hectáreas totalmente planeado para convivir como una Ciudad Inteligente</p>
+            <!-- carrusel  -->
+            <div class="" style="max-width: 800px; margin: 0 auto;">
+                <div id="carousel2" class="carousel carousel-dark slide  scroll-content fadeTop" data-bs-ride="carousel">
+                    <div class="carousel-inner rounded shadow">
+                        <div class="carousel-item active">
+                            <img data-src="img/presentacion/presentacion-1.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-2.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-3.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-4.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-5.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-6.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-7.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-8.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-9.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-10.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-11.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-12.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-13.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-14.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-15.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-16.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>7
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-17.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-18.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-19.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-20.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-21.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-22.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-23.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                        <div class="carousel-item">
+                            <img data-src="img/presentacion/presentacion-24.JPG" class="d-block w-100 lazyload" alt="">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true">
+                        </span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"  aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
 
-	<!-- Modal -->
-	<div class="modal fade" id="playa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-lgmodal-xl"  style="max-width: 1000px;">
-		<div class="modal-content">
-			<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabel">Recorrido Virtual</h5>
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-				<div class="embed-responsive embed-responsive-16by9 ">
-					<iframe class="rounded lazyload" data-src="https://www.youtube.com/embed/7dDBOHU8fCU" title="YouTube video player" width="100%"  height="400" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				  </div>
-			</div>
-			<!--<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-				<button type="button" class="btn btn-primary">Save changes</button>
-			</div>-->
-		</div>
-		</div>
-	</div>
+        </div>
+    </div>
 
 
-	<!--seccion5-->
-	<div class="container-fluid  py-5 ">
-		<div class="container py-3">
-			<h3 class="text-center mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Urbanismo y vanguardia</h3>
-			<div class="row row-cols-1 row-cols-lg-2">
-				<div class="col mb-4">
-					<div class="embed-responsive embed-responsive-16by9 ">
-						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/9_pCAN2C-mc" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					  </div>
-				</div>
-				<div class="col">
-					<p class=" text-center scroll-content fadeTop">  Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega  </p>
-					<div class="py-4">
-						<img class="img-fluid lazyload rounded shadow scroll-content fadeTop" data-src="img/luz,agua.png" alt="">
-					</div>
-				
-					<p class=" text-center scroll-content fadeTop"> Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales </p>
 
-				</div>
-			</div>
-			
-		</div>
-	</div>
-	<!--seccion5-->
-	<div class="container-fluid  py-5 ">
-		<div class="container ">
-			<h3 class=" text-uppercase text-center mb-4 mb-lg-5 scroll-content fadeTop montserrat" style="font-weight: 700;"> Seguridad y privacidad</h3>
-			<div class="row row-cols-1 row-cols-lg-2 py-4">
-				<div class="col d-block d-lg-none mb-4">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/mJTROq99hos" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="col mb-5 mb-lg-0">
-					<!--
-					<div class="row pt-4 pb-4 scroll-content fadeTop" style="max-width: 350px; margin: 0 auto;">
-						<div class="col ">
-							<img class="lazyload " data-src="img/camara-de-seguridad.png" width="80px" alt="">
-						</div>
-						<div class="col">
-							<img class="lazyload" data-src="img/seguridad.png" width="80px" alt="">
-						</div>
-						<div class="col">
-							<img class="lazyload" data-src="img/policia.png" width="80px" alt="">
-						</div>
-					</div>
-					-->
-					<p class=" scroll-content fadeTop">  <strong class="text-primary fw-normal"> Ciudad Central</strong> cuenta con medidas para garantizar que tú y tu familia tengan un entorno seguro, cómodo y privado.</p>
-					
-					<div class="row row-cols-1 row-cols-lg-2 pt-3">
-						<div class="col mb-2 scroll-content fadeTop">
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/seguridad.png" width="30px"   >
-								</div>
-								<p class="mb-0" style="">&nbsp;  Vigilancia 24/7    </p>
-							</div>
-						</div>
-						<div class="col mb-2 scroll-content fadeTop">
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/muro.png" width="30px"   >
-								</div>
-								<p class="mb-0" style="">&nbsp;  Barda perimetral      </p>
-							</div>
-						</div>
-						<div class="col mb-2 scroll-content fadeTop">
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/policia.png" width="30px"   >
-								</div>
-								<p class="mb-0" style="">&nbsp; Guardias    </p>
-							</div>
-						</div>
-						<div class="col mb-2 scroll-content fadeTop">
-							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/camara-de-seguridad.png" width="30px"   >
-								</div>
-								<p class="mb-0" style="">&nbsp; Circuito Cerrado   </p>
-							</div>
-						</div>
-						<!--
-						<div class="col mb-2 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Barda perimetral   </div>
-						<div class="col mb-2 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Guardias    </div>
-						<div class="col mb-2 scroll-content fadeTop">  <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Circuito Cerrado  </div>-->
-					</div>
-				</div>
-				<div class="col d-none d-lg-block">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/mJTROq99hos" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--seccion6-->
-	<div class="container-fluid  py-5 ">
-		<div class="container ">
-			<h3 class=" text-center mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" > Master Plan </h3>
-			<p class=" text-center  mb-4 scroll-content fadeTop"> Macro-fraccionamiento de 920 hectáreas totalmente planeado para convivir como una Ciudad Inteligente </p>
-			<!-- carrusel  -->
-			<div id="carousel2" class="carousel carousel-dark slide  scroll-content fadeTop" data-bs-ride="carousel">
-				<div class="carousel-inner rounded shadow">
-					<div class="carousel-item active">
-						<img data-src="img/presentacion/presentacion-1.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-2.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-3.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-4.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-5.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-6.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-7.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-8.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-9.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-10.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-11.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-12.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-13.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-14.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-15.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-16.JPG" class="d-block w-100 lazyload" alt="">
-					</div>7
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-17.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-18.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-19.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-20.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-21.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-22.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-23.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-					<div class="carousel-item">
-						<img data-src="img/presentacion/presentacion-24.JPG" class="d-block w-100 lazyload" alt="">
-					</div>
-				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
-					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon " aria-hidden="true">
-					</span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carousel2"
-					data-bs-slide="next">
-					<span class="carousel-control-next-icon"  aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-			</div>
-		</div>
-	</div>
-	<!--seccion7-->
-	<div class="container-fluid  py-5 ">
-		<div class="container py-3">
-			<h4 class="text-center mb-5 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;"  >Crédito Central</h4>
-			<div class="row row-cols-1 row-cols-lg-2">
-				<div class="col mb-4 d-block d-lg-none">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="rounded lazyload shadow scroll-content fadeTop"  data-src="https://www.youtube.com/embed/z0Nmt05g-Hc" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-				<div class="col">
-					<h3 class=" mb-4 mb-lg-4 scroll-content fadeTop "> Financiamiento al alcance de tu bolsillo </h3>
-					<div class="d-flex" style="margin: 0 auto;" >
-						<div class="row row-cols-1 row-cols-lg-1 h4 fw-light  ms-0 ms-lg-4" >
-							<div class="col mb-2 scroll-content fadeTop">
-								<div class="d-flex align-items-center"> 
-									<div class="bg-warning p-2"  style="border-radius: 100px; ">
-										<img class="" src="img/credito.png" width="30px"   >
-									</div>
-									<p class="mb-0" >&nbsp;  Sin revisión de buró de crédito    </p>
-								</div>
-							</div>
-							<div class="col mb-2 scroll-content fadeTop">
-								<div class="d-flex align-items-center"> 
-									<div class="bg-warning p-2"  style="border-radius: 100px; ">
-										<img class="" src="img/plazos.png" width="30px"   >
-									</div>
-									<p class="mb-0" > &nbsp; Plazos de hasta 180 meses    </p>
-								</div>
-							</div>
-							<div class="col mb-2 scroll-content fadeTop">
-								<div class="d-flex align-items-center"> 
-									<div class="bg-warning p-2"  style="border-radius: 100px; ">
-										<img class="" src="img/ingresos.png" width="30px"   >
-									</div>
-									<p class="mb-0" >&nbsp; Sin comprobación de ingresos   </p>
-								</div>
-							</div>
-							<div class="col mb-2 scroll-content fadeTop">
-								<div class="d-flex align-items-center"> 
-									<div class="bg-warning p-2"  style="border-radius: 100px; ">
-										<img class="" src="img/mensualidades.png" width="30px"   >
-									</div>
-									<p class="mb-0" >&nbsp;  Mensualidades accesibles    </p>
-								</div>
-							</div>
-							<div class="col mb-2 scroll-content fadeTop">
-								<div class="d-flex align-items-center"> 
-									<div class="bg-warning p-2"  style="border-radius: 100px; ">
-										<img class="" src="img/dinero.png" width="30px"   >
-									</div>
-									<p class="mb-0" >&nbsp;  Periodos a meses sin intereses   </p>
-								</div>
-							</div>
-							<!--<div class="col mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;  Sin revisión de buró de crédito </div>
-							<div class="col mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Plazos de hasta 180 meses</div>
-							<div class="col mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Sin comprobación de ingresos </div>
-							<div class="col mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Mensualidades accesibles </div>
-							<div class="col mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Periodos a meses sin intereses </div>-->
-						</div>
-					</div>
-					<!--
-					<div class="row  pt-2 pb-4 pb-lg-0  scroll-content fadeTop" style="max-width: 280px; margin-left: auto; margin-right: auto;">
-						<div class="col">
-							<img src="img/dinero.png" width="100px" alt="">
-						</div>
-						<div class="col">
-							<img src="img/prestamo.png" width="100px" alt="">
-						</div>
-					</div>-->
-				</div>
-				<div class="col mb-4 d-none d-lg-block">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/z0Nmt05g-Hc" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--seccion8-->
+    <!--frecuentes y kit-->
+    <div class="container-fluid  py-5 bg-light">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <h3 class="text-primary text-center text-lg-end scroll-content fadeTop">Comienza ganando desde el primer momento</h3>
+                    <p class=" pt-2 text-end scroll-content fadeTop"> ¡Comienza tu negocio y gana mas de <strong>$6,000</strong> pesos <br> con el <strong>Kit de
+                            Emprendimiento</strong> Natura!</p>
+                    <!-- carrusel  -->
+                    <div id="carousel2" class="carousel slide shadow scroll-content fadeTop" data-bs-ride="carousel"
+                        style="outline: solid 1px #F39C12;">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img data-src="img/kitpaso1.png" class="d-block w-100 lazyload" alt="campaña">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="img/paso2-2.jpg" class="d-block w-100 lazyload" alt="campaña">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="img/paso3-2.jpg" class="d-block w-100 lazyload" alt="campaña">
+                            </div>
+                            <div class="carousel-item">
+                                <img data-src="img/paso4-2.jpg" class="d-block w-100 lazyload" alt="campaña">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon " aria-hidden="true"> <i
+                                    class="bi bi-chevron-compact-left fs-1" style="color:#797d7f ;"></i>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                    class="bi bi-chevron-compact-right fs-1" style="color:#797d7f ;"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h3 class="text-center text-lg-start text-primary scroll-content fadeTop">¿Tienes dudas de como comenzar? Preguntas frecuentes</h3>
+                    <p class="pt-2 scroll-content fadeTop" > Resuelve tus dudas y pierde el miedo a emprender y comienza a ganar con Natura</p>
+                    <div class="accordion accordion-flush shadow scroll-content fadeTop" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne" style="outline: solid 1px #F39C12;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    ¿Cuál es mi ganancia como consultora natura?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">El ser consultora tiene beneficios y uno de ellos es que
+                                    obtienes el 30 % de descuento en todos los productos.<br><br> Significa que tu
+                                    ganancia mínima será del 30 % en cada pedido, adicionalmente natura ofrece
+                                    oportunidades para que puedas incrementar tu ganancia una de ellas es el camino de
+                                    crecimiento con el que podrás ganar regalos en productos en pedidos a partir de los
+                                    $1600. <br><br> 30.25 % de la venta neta, sin IVA.
+                                    <br> 100 % de ganancia en los productos de regalo y promociones.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingTwo" style="outline: solid 1px #F39C12;">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                    aria-controls="flush-collapseTwo">
+                                    ¿Cuál es el costo mínimo de los pedidos?
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">El pedido mínimo ciclo a ciclo es por $ 1,150 precio
+                                    revista. (El monto de pedido mínimo puede modificarse)
+                                    <br><br> Repique se le llama a los segundos pedidos durante el ciclo y puedes
+                                    realizar los que sean necesarios. <br>La cantidad mínima del repique es por $ 1000
+                                    precio revista
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--seccion8-->
 	
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
@@ -629,7 +644,7 @@
 	<!--seccion8-->
 	<div class="container-fluid  py-5 ">
 		<div class="container py-5">
-			<h4 class="text-center  mb-5 text-uppercase scroll-content fadeTop"  style="font-weight: 600;">Consulta disponibilidad en tiempo real</h4>
+			<h4 class="text-center h1  mb-5 text-uppercase scroll-content fadeTop"  style="font-weight: 600;">Consulta disponibilidad en tiempo real</h4>
 			<div class="row ">
 				<div class="col-12 col-lg-4 mb-4">
 					<div class=" d-flex justify-content-center align-items-center">
@@ -4102,14 +4117,71 @@
 			</div>
 		</div>
 	</div>
-	<!--seccion8-->
-	<div class="container-fluid  pb-5 ">
-		<div class="container pb-5">
-			<h2 class="text-center montserrat text-uppercase" style="font-weight: 700;">Preventa</h2>
-		</div>
-	</div>
-	<!--seccion8-->
-	<div class="container-fluid  ">
+    <!-- seccion 4 testimonios  -->
+    <div class="container-fluid py-5 bg-light ">
+        <div class="container py-5">
+            <div class="row ">
+                <div class="col-4  d-flex  align-items-center     ">
+                    <div class=""> 
+                        
+                        <h2 class="text-primary mb-4 scroll-content fadeTop" style="font-size: 50px; line-height: 0.9em; font-weight: 600;">Testimonios de Consultoras
+                        </h2>
+            
+                        <p class=" mb-5 scroll-content fadeTop"> Este es un sitio creado para ayudarte a realizar tu registro de manera fácil y
+                            segura directamente en Natura.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12   mb-3 bajon h-100 scroll-content fadeTop">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <p class="card-text"> <em>"Entre por una amiga que vendía en mi trabajo y me invito para
+                                            vender natura, me registre y desde el primer momento me sentí parte de la
+                                            empresa."</em></p>
+                                    <div class="d-flex " style="align-items: center;">
+                                        <img class="me-3" src="img/testimonio-1.jpg" width="60px" alt="">
+                                        <p class="mb-0 small"> <strong> Cynthia Nava </strong> <br> <em> Consultora Natura,
+                                                Nivel: Bronce </em> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12  h-100  mb-3 scroll-content fadeTop">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <p class="card-text"> <em> "Buscaba un trabajo donde yo decidiera cuanto ganar, encontré
+                                            este sitio y cuando me registre, natura me ha cambiado totalmente mi vida." </em>
+                                    </p>
+                                    <div class="d-flex" style="align-items: center; ">
+                                        <img class="me-3" src="img/testimonio-2.jpg" width="60px" alt="" style="">
+                                        <p class="mb-0 small"> <strong> Joana Martínez </strong> <br> <em> Consultora Natura,
+                                                Nivel: Plata </em> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12 mb-3 h-100 subidon scroll-content fadeTop">
+                            <div class="card h-100 shadow">
+                                <div class="card-body">
+                                    <p> <em> "Cuando entre a Natura no pensé que me daría tantas buenas experiencias logrando
+                                            mis metas y obteniendo ganancias para mí. " </em></p>
+                                    <div class="d-flex " style="align-items: center;">
+                                        <img class="me-3" src="img/testimonio-3.jpg" width="60px" alt="" style=";">
+                                        <p class="mb-0 small"><strong>Aurora Casanova</strong> <br> <em> Consultora Natura,
+                                                Nivel: Oro </em> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--seccion8-->
+	<div class="container-fluid  bg-light">
 		<div class="container py-5">
 			<h2 class=" text-center text-uppercase scroll-content fadeTop montserrat mb-5"  style="font-weight: 700;">Proceso de compra</h2>
 			<div class="row row-cols-1 row-cols-lg-3" >
@@ -4155,77 +4227,85 @@
 			</div>
 		</div>
 	</div>
-	<!--seccion8-->
-	<div class="container-fluid  ">
-		<div class="container py-5">
-			<h2 class="text-center scroll-content fadeTop montserrat  mb-5 text-uppercase" style="font-weight: 700;">	Testimonios</h2>
-			<div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 ">
-				<div class="col mb-5 mb-lg-0">
-					
-					<div class="card scroll-content fadeTop shadow position-relative border border-1 border-warning h-100" style="border-radius: 0; border: none;  " >
-						<div class="movidito" > 
-							<img class="lazyload border border-1 border-primary shadow" data-src="img/testimonio-1.png" width="100px"  alt="" style="border-radius: 100px;" >
-						</div>
-						<div class="card-body mt-5 pt-4 px-4">
-							<p class="text-center"> <em> Compre mi primer terreno en Ciudad Central y solo me tuve que pagar $1000 para apartarlo, muy fácil. </em></p>
-							<p class="text-end"> <strong> <em> Laura López </strong>  </em> </p>
-							<div class="movidito2">
-								<img class="lazyload" data-src="img/cita.png" width="100px"  alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col mb-5 mb-lg-0">
-					<div class="card scroll-content fadeTop position-relative border border-1 border-warning shadow h-100">
-						<div class="movidito" > 
-							<img class="lazyload border border-1 border-primary shadow" data-src="img/testimonio-2.png" width="100px"  alt="" style="border-radius: 100px;" >
-						</div>
-						<div class="card-body mt-5 pt-4 px-4">
-							<p class="card-text text-center"> <em>Adquirí un Terreno de 300 m2 y el trámite fue un rápido y sencillo, ahora ya he comprado un segundo terreno y posiblemente compre un tercer terreno </em></p>
-							<p class="text-end"> <strong> <em> Ruben Rojas</em> </strong>  </p>
-							<div class="movidito2">
-								<img class="lazyload" data-src="img/cita.png" width="100px"  alt="">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col mb-5 mb-lg-0">
-					<div class="card scroll-content fadeTop position-relative border border-1 border-warning shadow h-100">
-						<div class="movidito" > 
-							<img class="lazyload border border-1 border-primary shadow" data-src="img/testimonio-3.png" width="100px"  alt="" style="border-radius: 100px;" >
-						</div>
-						<div class="card-body mt-5 pt-4 px-4">
-							<p class="text-center"><em> Me recomendaron comprar un terreno en Ciudad Central, ya que su valor estaba en aumento, hoy vale el doble del precio que cuando hice la compra. </em></p>
-							<p class="text-end"><strong><em> Gerardo Torres y Maribel Méndez  </em> </strong></p>
-						</div>
-						<div class="movidito2">
-							<img class="lazyload" data-src="img/cita.png" width="100px"  alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--seccion8-->
-	<div class="container-fluid  py-5 ">
-		<div class="container py-5">
-			<h2 class="text-center text-uppercase montserrat mb-5" style="font-weight: 700;" >ORVE</h2>
-			<div class="row row-cols-1 row-cols-lg-2">
-				<div class="col">
-					<p class="h4 fw-light mb-4">Somos una empresa dedicada a nuestros clientes, conformada por especialistas patrimoniales, financieros y jurídicos con la misión de brindar el mejor servicio a toda persona que busca tomar la mejor decisión para invertir. <br><br> Tenemos un compromiso con las familias mexicanas de garantizar el crecimiento de su inversión en un patrimonio seguro.</p>
-				</div>
-				<div class="col">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/-daylm0u_Fk" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-				</div>
-			</div>
+    <!--requisitos-->
+    <div class="container-fluid pt-5 bg-light">
+        <div class="container  pt-4 pb-5 ">
+            <h2 class="text-primary text-center mb-4 scroll-content fadeTop" style="font-size: 50px; line-height: 0.9em; font-weight: 600;">Requisitos para Ser Consultora   </h2>
+           
+            <p class="text-center scroll-content fadeTop">Comienza tu negocio dando el primer paso hoy. </p>
+            <h5 class="fs-5 fw-bolder text-center scroll-content fadeTop">Requisitos <u> obligatorios </u> para ser Consultora Natura:
+            </h5>
+            <div class="row scroll-content fadeTop" style="max-width: 600px; margin: 0 auto; ">
+                <div class="cols-12 col-lg-6">
+                    <p class="mb-0 text-center"> <i class="bi bi-file-earmark-text fs-2 text-primary"></i></p>
+                    <p class="text-center"> <strong> Comprobante de Domicilio </strong></p>
+                </div>
+                <div class="cols-12 col-lg-6">
+                    <p class="mb-0 text-center"> <i class="bi bi-credit-card-2-front fs-2 text-primary"></i></p>
+                    <p class="text-center"> <strong> Identificación oficial </strong> </p>
+                </div>
+            </div>
+            <div class="row scroll-content fadeTop" style="max-width: 600px; margin: 0 auto; ">
+                <div class="rounded "
+                    style="display: flex;  margin: auto 0 ;align-items: center;outline: 1px solid #ccc; ">
+                    <i class="bi bi-exclamation-triangle  fs-1 text-primary me-4 mb-0"></i>
+                    <p class="mb-0"> <strong>Importante: </strong> Deberás llenar los datos del formulario
+                        de este sitio y enviar copia o captura de tu identificación y comprobante a
+                        <b>info@vendernatura.com.mx</b> para completar correctamente tu registro.
+                    </p>
+                </div>
+            </div>
+            <h5 class="mb-0 text-center mt-4 scroll-content fadeTop">Sigue las instrucciones para completar tu registro:</h5>
+            <div class="row row-cols-1 row-cols-lg-3 ">
+                <div class="col position-relative p-4 scroll-content fadeTop">
+                    <h6 class="text-primary fs-3 fw-bolder"> Paso 1 </h6>
+                    <h6 class="card-title">Completa correctamente tu registro</h6>
+                    <p class="card-text text-muted mb-0">Completa el formulario de este sitio y envía tu documentación.
+                    </p>
+
+                </div>
+                <div class="col position-relative p-4 scroll-content fadeTop">
+                    <h6 class="text-primary fs-3 fw-bolder"> Paso 2 </h6>
+                    <h6 class="card-title">Recibe ayuda para realizar tu pedido</h6>
+                    <p class="card-text text-muted mb-0">Uno de nuestros asesores te contactará para notificarte que tu
+                        registro ha sido exitoso o notificarte algún inconveniente con el mismo.</p>
+
+                </div>
+                <div class="col p-4 scroll-content fadeTop">
+                    <h6 class="text-primary fs-3"> Paso 3 </h6>
+                    <h6 class="card-title"> Vende productos natura y obtén ingresos</h6>
+                    <p class="card-text text-muted">Una vez registrado(a), realiza tu primer pedido como consultora
+                        natura. Ofrece una consultoría de calidad a tus clientes y obtén ingresos cada ciclo de ventas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--formulario-->
+    <div class="container-fluid pt-5  bg-light" id="registro" >
+        <div class="container  pt-4 pb-5">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <h2 class=" mb-4 scroll-content fadeTop text-end" style="font-size: 50px; line-height: 0.9em; font-weight: 600;"> Déjanos tus datos  </h2>
+                    
+                    <p class="text-end scroll-content fadeTop">Los datos aquí ingresados serán validados junto con tus documentos.
+                    </p>
+                    <div>
+                        <img class="w-100 scroll-content fadeTop" src="img/chicaporducotos.png" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    
 
 
 
-		</div>
-	</div>
-	<!--footer-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer-->
     <section class="container-fluid  dos bg-warning" >
 		<div class="container  pt-5 ">
 			<small>
@@ -4285,31 +4365,43 @@
 	<a  class="appwhatsapp" target="_blank" href="https://api.whatsapp.com/send?phone=5215587426237&text=Hola!%20quiero%20informes%20sobre%20Central%20M%C3%A9rida" >
 		<img class="img-fluid" src="img/whatsapp.png"  alt="whatsapp">
 	</a>
-	<!-- scripts   -->
-	<script src="https://kit.fontawesome.com/0ce9c55a95.js" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="js/lazysizes.min.js" async=""></script>
-	<!-- carrusel  -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script>     
-		window.addEventListener('scroll', function()  {
-let elements = document.getElementsByClassName('scroll-content');
-let screenSize = window.innerHeight;
 
-	for(var i = 0; i < elements.length; i++) {
-	var element = elements[i];
+    
 
-	if(element.getBoundingClientRect().top < screenSize) {
-	  element.classList.add('visible');
-	} else {
-	  element.classList.remove('visible');
-	}
+    <!-- scripts   -->
+    <script src="https://kit.fontawesome.com/0ce9c55a95.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+    <script src="js/lazysizes.min.js" async=""></script>
+    <!-- carrusel  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 
-  }
+        <script>     
+            window.addEventListener('scroll', function()  {
+  let elements = document.getElementsByClassName('scroll-content');
+  let screenSize = window.innerHeight;
+  
+        for(var i = 0; i < elements.length; i++) {
+        var element = elements[i];
+
+        if(element.getBoundingClientRect().top < screenSize) {
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible');
+        }
+
+      }
 });
-	</script>
-	
+        </script>
 </body>
+
 </html>

@@ -86,17 +86,24 @@
 	</nav>
 	<!-- seccion 1 portada-->
 	<div class="jumbotron-fluid fondo  ">
-		
+		<div  class="d-none d-lg-block"  style="background-color: rgba(255, 255, 255,0.842); width: 52%; height: 650px; position: absolute; z-index: 1; " >  </div>
+		<div  class="d-block d-lg-none  "  style="background-color: rgba(0, 0, 0, 0.4); width: 100%; height: 650px; position: absolute; z-index: 1; " >  </div>
 		<div class="container py-5"  style="height: 650px;">
 			<div class="row row-cols-1 row-cols-lg-2 py-5">
-				<div class="col bg-light"  style="z-index: 2;">
-					<h1 class="mt-4 mb-4  text-uppercase montserrat" style="font-weight:800; line-height: 1.1em;">Terrenos <br>Residenciales<br> en Mérida </h1>
-					<h3 class="mb-5 "  > Una comunidad planeada para ti, en la zona de mayor crecimiento y proyección en Mérida  </h3>
+				<div class="col d-none d-lg-block"  style="z-index: 2;">
+					<h1 class="mt-4 mb-4 display-4 text-uppercase montserrat" style="font-weight:800;line-height: 1.1em;">Terrenos <br>Residenciales<br> en Mérida </h1>
+					<h2 class="mb-5 fw-light"  > Una comunidad planeada para ti, en la zona de mayor crecimiento y proyección en Mérida  </h2>
 					<button type="button"  class="btn btn-primary btn-lg shadow" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 100px;">
 						Recorrido Virtual
 					</button>
 				</div>
-				
+				<div class="col d-block d-lg-none "  style="z-index: 2;">
+					<h1 class="text-white text-center mb-5 display-1  text-uppercase montserrat" style="font-weight: 800;">Terrenos <br> Residenciales<br> en Mérida </h1>
+					<h2 class="text-white text-center mb-5 fw-light"  > Una comunidad planeada para ti, en la zona de mayor crecimiento y proyección en Mérida  </h2>
+					<p class="text-center"><button type="button"  class="btn btn-primary  " data-bs-toggle="modal" data-bs-target="#exampleModal">
+						Recorrido Virtual
+					</button></p>
+				</div>
 				<div class="col">
 					<div>	</div>
 				</div>
@@ -123,13 +130,16 @@
 		</div>
 		</div>
 	</div>
+  
+
+
 	<!--seccion1-->
 	<div class="container-fluid  pt-5 pb-3 pb-lg-5 fondo3">
 		<div class="container pt-5 pb-3 pb-lg-5">
-			<h2 class="mb-4 mb-lg-3 text-center text-lg-start text-uppercase montserrat" style="font-weight: 700;" >Ciudad Central</h2>
+			<h2 class="mb-4 mb-lg-3 text-center text-lg-start h1 text-uppercase montserrat" style="font-weight: 700;" >Ciudad Central</h2>
 			<div class="row row-cols-1 row-cols-lg-2">
 				<div class="col py-0 py-lg-4">
-					<p class=" fw-light text-center text-lg-start "> <strong class="fw-normal text-primary"> Innovador proyecto residencial al noroeste de Mérida</strong>, la zona más privilegiada para invertir y crear tu patrimonio con las mejores comodidades.  </p>
+					<p class="h2 fw-light text-center text-lg-start "> <strong class="fw-normal text-primary"> Innovador proyecto residencial al noroeste de Mérida</strong>, la zona más privilegiada para invertir y crear tu patrimonio con las mejores comodidades.  </p>
 				</div>
 				<div class="col d-block d-lg-none">
 					<div class="">
@@ -139,7 +149,7 @@
 			</div>
 		</div>
 	</div>
-	<p class="bg-warning py-4 text-center scroll-content fadeTop"> <strong class="fw-bold"> Terrenos Premium</strong> con todos los servicios necesarios y amenidades de ensueño  </p>
+	<p class="bg-warning py-4 text-center h4 fw-light scroll-content fadeTop"> <strong class="fw-bold"> Terrenos Premium</strong> con todos los servicios necesarios y amenidades de ensueño  </p>
 	<!--seccion3-->
 	<div class="container-fluid pt-5">
 		<div class="container pt-5">
@@ -151,8 +161,8 @@
 				</div>
 				<div class="col-12 col-lg-7 ">
 					<div >
-						<h3 class="text-center text-lg-end   mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Servicios Intramuros</h3>
-						<p class=" fw-light text-center text-lg-end scroll-content fadeTop"> Los lotes se encuentran divididos en privadas asegurando <strong class="fw-normal text-primary">comodidad y confort</strong>.<br><br>A lo largo de Ciudad Central se distribuyen <strong class="fw-bold"> Casas Club</strong> que contarán con:  </p>
+						<h3 class="text-center text-lg-end  h1 mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Servicios Intramuros</h3>
+						<p class="h4 fw-light text-center text-lg-end scroll-content fadeTop"> Los lotes se encuentran divididos en privadas asegurando <strong class="fw-normal text-primary">comodidad y confort</strong>.<br><br>A lo largo de Ciudad Central se distribuyen <strong class="fw-bold"> Casas Club</strong> que contarán con:  </p>
 					</div>
 				</div>
 				<div class="col-12 col-lg-5 d-block d-lg-none mt-3 mb-3">
@@ -206,7 +216,7 @@
 					</ul>
 				</div>
 				<div class="col d-block d-lg-flex justify-content-center">
-					<ul class="list-unstyled  fw-light">
+					<ul class="list-unstyled h5 fw-light">
 						<!--<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;GYM</li>
 						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Lobby</li>
 						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Juegos infantiles</li>-->
@@ -235,7 +245,7 @@
 					</ul>
 				</div>
 				<div class="col d-block d-lg-flex justify-content-center">
-					<ul class="list-unstyled ">
+					<ul class="list-unstyled h5 fw-light">
 						<!--<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;  Tienda</li>
 						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Terraza</li>
 						<li class="mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;	 Salón de eventos</li>-->
@@ -273,7 +283,7 @@
 		<div class="container py-2">
 			<div class="row  ">
 				<div class="col-12 col-lg-8 mb-4 mb-lg-0">
-					<p class="text-center text-lg-start mb-0 scroll-content fadeTop">¡Y además podrás tener acceso exclusivo al Club de Playa en Telchac Puerto!  </p>
+					<p class="text-center text-lg-start h5 mb-0 scroll-content fadeTop">¡Y además podrás tener acceso exclusivo al Club de Playa en Telchac Puerto!  </p>
 				</div>
 				<div class="col-12 col-lg-4 d-block d-lg-flex justify-content-end text-center align-items-center">
 					<div class="">
@@ -314,7 +324,7 @@
 	<!--seccion5-->
 	<div class="container-fluid  py-5 ">
 		<div class="container py-3">
-			<h3 class="text-center mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Urbanismo y vanguardia</h3>
+			<h3 class="text-center h1 mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Urbanismo y vanguardia</h3>
 			<div class="row row-cols-1 row-cols-lg-2">
 				<div class="col mb-4">
 					<div class="embed-responsive embed-responsive-16by9 ">
@@ -322,12 +332,12 @@
 					  </div>
 				</div>
 				<div class="col">
-					<p class=" text-center scroll-content fadeTop">  Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega  </p>
+					<p class="h3 text-center  fw-light scroll-content fadeTop">  Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega  </p>
 					<div class="py-4">
 						<img class="img-fluid lazyload rounded shadow scroll-content fadeTop" data-src="img/luz,agua.png" alt="">
 					</div>
 				
-					<p class=" text-center scroll-content fadeTop"> Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales </p>
+					<p class="h4 text-center scroll-content fadeTop"> Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales </p>
 
 				</div>
 			</div>
@@ -337,7 +347,7 @@
 	<!--seccion5-->
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
-			<h3 class=" text-uppercase text-center mb-4 mb-lg-5 scroll-content fadeTop montserrat" style="font-weight: 700;"> Seguridad y privacidad</h3>
+			<h3 class="h1 text-uppercase text-center mb-4 mb-lg-5 scroll-content fadeTop montserrat" style="font-weight: 700;"> Seguridad y privacidad</h3>
 			<div class="row row-cols-1 row-cols-lg-2 py-4">
 				<div class="col d-block d-lg-none mb-4">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -358,9 +368,9 @@
 						</div>
 					</div>
 					-->
-					<p class=" scroll-content fadeTop">  <strong class="text-primary fw-normal"> Ciudad Central</strong> cuenta con medidas para garantizar que tú y tu familia tengan un entorno seguro, cómodo y privado.</p>
+					<p class="h3 fw-light scroll-content fadeTop">  <strong class="text-primary fw-normal"> Ciudad Central</strong> cuenta con medidas para garantizar que tú y tu familia tengan un entorno seguro, cómodo y privado.</p>
 					
-					<div class="row row-cols-1 row-cols-lg-2 pt-3">
+					<div class="row row-cols-1 row-cols-lg-2 h4 fw-light pt-3">
 						<div class="col mb-2 scroll-content fadeTop">
 							<div class="d-flex align-items-center"> 
 								<div class="bg-warning p-2"  style="border-radius: 100px; ">
@@ -410,8 +420,8 @@
 	<!--seccion6-->
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
-			<h3 class=" text-center mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" > Master Plan </h3>
-			<p class=" text-center  mb-4 scroll-content fadeTop"> Macro-fraccionamiento de 920 hectáreas totalmente planeado para convivir como una Ciudad Inteligente </p>
+			<h3 class="h1 text-center mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" > Master Plan </h3>
+			<p class="h3 text-center fw-normal mb-4 scroll-content fadeTop"> Macro-fraccionamiento de 920 hectáreas totalmente planeado para convivir como una Ciudad Inteligente </p>
 			<!-- carrusel  -->
 			<div id="carousel2" class="carousel carousel-dark slide  scroll-content fadeTop" data-bs-ride="carousel">
 				<div class="carousel-inner rounded shadow">
@@ -505,7 +515,7 @@
 	<!--seccion7-->
 	<div class="container-fluid  py-5 ">
 		<div class="container py-3">
-			<h4 class="text-center mb-5 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;"  >Crédito Central</h4>
+			<h4 class="text-center h1 mb-5 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;"  >Crédito Central</h4>
 			<div class="row row-cols-1 row-cols-lg-2">
 				<div class="col mb-4 d-block d-lg-none">
 					<div class="embed-responsive embed-responsive-16by9">
@@ -585,9 +595,9 @@
 	
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
-			<h4 class="text-center text-uppercase  mb-5 scroll-content fadeTop montserrat" style="font-weight: 700;" >Terrenos al tamaño de tu proyecto</h4>
+			<h4 class="text-center h1 text-uppercase  mb-5 scroll-content fadeTop montserrat" style="font-weight: 700;" >Terrenos al tamaño de tu proyecto</h4>
 			<p class="h4 fw-light text-center scroll-content fadeTop"> Superficies desde 133 m2 hasta 749 m2. <br> Predios con poligono regular, irregular, esquinas y excedentes. <br><br> </p>
-			<p class="text-center fw-bold  scroll-content fadeTop"> ¡Elige el que más se acomode a tí!  </p>
+			<p class="text-center fw-bold h4 scroll-content fadeTop"> ¡Elige el que más se acomode a tí!  </p>
 			<div class="row row-cols-1 row-cols-lg-3 py-5">
 				<div class="col d-flex justify-content-center mb-4">
 					<div class="card shadow carta h-100 scroll-content fadeTop" style="width: 20rem;"  >
@@ -629,7 +639,7 @@
 	<!--seccion8-->
 	<div class="container-fluid  py-5 ">
 		<div class="container py-5">
-			<h4 class="text-center  mb-5 text-uppercase scroll-content fadeTop"  style="font-weight: 600;">Consulta disponibilidad en tiempo real</h4>
+			<h4 class="text-center h1 mb-5 text-uppercase scroll-content fadeTop"  style="font-weight: 600;">Consulta disponibilidad en tiempo real</h4>
 			<div class="row ">
 				<div class="col-12 col-lg-4 mb-4">
 					<div class=" d-flex justify-content-center align-items-center">
@@ -4105,13 +4115,13 @@
 	<!--seccion8-->
 	<div class="container-fluid  pb-5 ">
 		<div class="container pb-5">
-			<h2 class="text-center montserrat text-uppercase" style="font-weight: 700;">Preventa</h2>
+			<h2 class="text-center h1 montserrat text-uppercase" style="font-weight: 700;">Preventa</h2>
 		</div>
 	</div>
 	<!--seccion8-->
 	<div class="container-fluid  ">
 		<div class="container py-5">
-			<h2 class=" text-center text-uppercase scroll-content fadeTop montserrat mb-5"  style="font-weight: 700;">Proceso de compra</h2>
+			<h2 class="h1 text-center text-uppercase scroll-content fadeTop montserrat mb-5"  style="font-weight: 700;">Proceso de compra</h2>
 			<div class="row row-cols-1 row-cols-lg-3" >
 				<div class="col mb-5 mb-lg-0 ">
 					<div class=" card d-flex justify-content-center align-items-center carta scroll-content fadeTop h-100 p-3 shadow border border-1 border-warning"   style="width: 20rem;  margin: 0 auto; ">
@@ -4158,7 +4168,7 @@
 	<!--seccion8-->
 	<div class="container-fluid  ">
 		<div class="container py-5">
-			<h2 class="text-center scroll-content fadeTop montserrat  mb-5 text-uppercase" style="font-weight: 700;">	Testimonios</h2>
+			<h2 class="text-center  scroll-content fadeTop montserrat h1 mb-5 text-uppercase" style="font-weight: 700;">	Testimonios</h2>
 			<div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 ">
 				<div class="col mb-5 mb-lg-0">
 					
@@ -4209,7 +4219,7 @@
 	<!--seccion8-->
 	<div class="container-fluid  py-5 ">
 		<div class="container py-5">
-			<h2 class="text-center text-uppercase montserrat mb-5" style="font-weight: 700;" >ORVE</h2>
+			<h2 class="text-center h1 text-uppercase montserrat mb-5" style="font-weight: 700;" >ORVE</h2>
 			<div class="row row-cols-1 row-cols-lg-2">
 				<div class="col">
 					<p class="h4 fw-light mb-4">Somos una empresa dedicada a nuestros clientes, conformada por especialistas patrimoniales, financieros y jurídicos con la misión de brindar el mejor servicio a toda persona que busca tomar la mejor decisión para invertir. <br><br> Tenemos un compromiso con las familias mexicanas de garantizar el crecimiento de su inversión en un patrimonio seguro.</p>
@@ -4238,7 +4248,7 @@
 				<div class=" cols-xs-12 cols-sm-12 cols-md-3 cols-lg-3 mb-2">
 					
 					<h6 class="" >NOSOTROS</h6>
-					<p class=" ">    Nuestro objetivo es otorgarte un ambiente de seguridad y con vbalor adquisitivo pensado a futuro</p>
+					<p class="fw-light ">    Nuestro objetivo es otorgarte un ambiente de seguridad y con vbalor adquisitivo pensado a futuro</p>
 				</div>
 				<div class=" cols-xs-12 cols-sm-12 cols-md-3 cols-lg-3 mb-2">
 					<h6 class="text-uppercase ">Mapa de Sitio</h6>

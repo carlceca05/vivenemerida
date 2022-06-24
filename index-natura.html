@@ -302,7 +302,6 @@
                             .subidon3{
                                 margin-top: -130px;
                             }
-
 							.swiper {
         width: 100%;
         height: 100%;
@@ -330,21 +329,9 @@
 
       .swiper-slide img {
         display: block;
-        width: 50%;
+        width: 100%;
         height: 100%;
         object-fit: cover;
-      }
-
-      .swiper-slide {
-        width: 60%;
-      }
-
-      .swiper-slide:nth-child(2n) {
-        width: 40%;
-      }
-
-      .swiper-slide:nth-child(3n) {
-        width: 50%;
       }
     	</style> 
 		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
@@ -353,10 +340,10 @@
     <div class="swiper mySwiper">
 		<div class="swiper-wrapper">
 		  <div class="swiper-slide">
-			<img src="img/slider-1.png" alt="">
+			<img src="img/bar.png" alt="">
 		  </div>
 		  <div class="swiper-slide">
-			<img src="img/slider-2.png" alt="">
+			<img src="img/alberca.png" alt="">
 		  </div>
 		  <div class="swiper-slide">
 			<img src="img/slider-3.png" alt="">
@@ -389,19 +376,21 @@
 
     <!-- Initialize Swiper -->
 	<script>
-		var swiper = new Swiper(".mySwiper", {
-		  slidesPerView: "auto",
-		  centeredSlides: true,
-		  spaceBetween: 30,
-		  
-		  pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		  },
-		  autoplay: {
+		 var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+		  /*autoplay: {
           delay: 2500,
           disableOnInteraction: false,
-        },
+        },*/
 		  navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",

@@ -16,8 +16,9 @@
     background-position: center;
     height: 650px;
 }
+
 .fondo3{
-    background-image: url(../img/fondo3.png);
+    background-image: url(../img/fondo3-ok.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -142,8 +143,11 @@
 
 
 
-$warning:  #F6E739;
-$primary: #6e00f9;
+$warning:  #FFE38B;
+$primary: #02B42F;
+$success: #293e29;
+
+
 $font-family-sans-serif: 'Poppins', sans-serif;
 
 @import "../node_modules/bootstrap/scss/bootstrap";

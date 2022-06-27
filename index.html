@@ -20,30 +20,28 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
 
 	<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-
-	
 	<style>
-		.montserrat{
+		/*.montserrat{
 			font-family: 'Montserrat', sans-serif;
+		}*/
+		.fadeTop {
+			opacity: 0; 
+			transform: translate(0, 30vh);
+			transition: all 1.4s;
 		}
-.fadeTop {
-    opacity: 0; 
-    transform: translate(0, 30vh);
-    transition: all 1.4s;
-}
-.visible {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-		.img-enlace{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 19;
-}
+		.visible {
+			opacity: 1;
+			transform: translate(0, 0);
+		}
+				.img-enlace{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 19;
+		}
 		@media only screen and (min-width:900px) and (max-width:2000px){
 
 		}
@@ -92,7 +90,7 @@
 			<div class="row row-cols-1 row-cols-lg-2 py-5">
 				<div class="col py-5 px-4 shadow border border-1 border-primary "  style="z-index: 2; background-color: rgba(255, 255, 255, 0.85);">
 					<h1 class=" mb-3  text-uppercase montserrat" style="font-size: 50px;font-weight:800; line-height: 1.1em; color: #2D2D2D;">Terrenos <br>Residenciales<br> en Mérida </h1>
-					<p class="mb-4 lead montserrat fw-light"  > Una comunidad planeada para ti, en la zona de mayor crecimiento y proyección en Mérida  </p>
+					<p class="mb-4 lead" style="font-weight: 400;"> Una comunidad planeada para ti, en la zona de mayor crecimiento y proyección en Mérida  </p>
 					<button type="button"  class="btn btn-primary shadow text-white" data-bs-toggle="modal" data-bs-target="#exampleModal" style="border-radius: 100px;">
 						Recorrido Virtual
 					</button>
@@ -179,10 +177,11 @@
 						<img class="img-fluid lazyload scroll-content fadeTop shadow rounded" data-src="img/casaclub-ciudad-central-orve.jpg"  alt="">
 					</div>
 				</div>
-				<div class="col-12 col-lg-7 ">
-					<div class="">
-						<h3 class="text-center text-lg-end   mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Servicios Intramuros</h3>
-						<p class=" fw-light text-center text-lg-end scroll-content fadeTop"> Los lotes se encuentran divididos en privadas asegurando <strong class="fw-normal text-primary">comodidad y confort</strong>.<br><br>A lo largo de Ciudad Central se distribuyen <strong class="fw-bold"> Casas Club</strong> que contarán con:  </p>
+				<div class="col-12 col-lg-7 d-flex align-items-center">
+					<div class=""  style="margin-top: auto;margin-bottom: auto;">
+						<h3 class="text-uppercase h2 scroll-content fadeTop montserrat" style="font-weight: 700;" >Servicios Intramuros</h3>
+						<h5 class="montserrat  mb-3 text-primary scroll-content fadeTop">Encuentra tu terreno e invierte en tu patrimonio </h5>
+						<p class=" scroll-content fadeTop" style="font-size: 16px;"> Los lotes se encuentran divididos en privadas asegurando <strong class="">comodidad y confort</strong>.<br>A lo largo de Ciudad Central se distribuyen <strong class="fw-bold"> Casas Club</strong> que contarán con:  </p>
 					</div>
 				</div>
 				<div class="col-12 col-lg-5 d-block d-lg-none mt-3 mb-3">
@@ -195,7 +194,7 @@
 	</div>
 	<div class="container-fluid">
 		<div class="container pb-4 ">
-			<div class="row row-cols-1 row-cols-lg-3 ">
+			<div class="row row-cols-1 row-cols-lg-3 pt-2">
 				<div class="col d-block d-lg-flex justify-content-center">
 					<!--<div class="mb-4">
 						<img class="img-fluid lazyload" data-src="img/cancha-cuadrada.jpg" width="170px" alt="" style="border-radius: 250px;">
@@ -207,29 +206,29 @@
 						-->
 						<li class="mb-3 scroll-content fadeTop">
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/martini.png" width="30px">
-									<!--<i class="fa-solid fa-martini-glass text-primary"></i>-->
+								<div class="bg-primary p-2"  style="border-radius: 100px; width: 35px;height: 35px; ">
+									<!--<img class="" src="img/martini.png" width="30px">-->
+									<i class="fa-solid fa-martini-glass text-light"></i>
 								</div>
 								<p class="mb-0" >&nbsp;  Bar </p>
 							</div> 
 						</li>
 						<li class="mb-3 scroll-content fadeTop"> 
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px;">
-									<img class="" src="img/piscina.png" width="30px">
-									<!--<i class="fa-solid fa-person-swimming text-primary"></i>-->
+								<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px;">
+									<!--<img class="" src="img/piscina.png" width="30px">-->
+									<i class="fa-solid fa-person-swimming text-light"></i>
 								</div>
-								<p class="mb-0" style="">&nbsp; Alberca </p>
+								<p class="mb-0" >&nbsp; Alberca </p>
 							</div> 
 						</li>
 						<li class="mb-3 scroll-content fadeTop">  
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px;">
-									<img class="" src="img/cancha-de-baloncesto.png" width="30px"   >
-									<!--<i class="fa-solid fa-baseball text-primary"></i>-->
+								<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px;">
+									<!--<img class="" src="img/cancha-de-baloncesto.png" width="30px">-->
+									<i class="fa-solid fa-baseball text-light"></i>
 								</div>
-								<p class="mb-0" style="">&nbsp; Cancha Deportiva </p>
+								<p class="mb-0" >&nbsp; Cancha Deportiva </p>
 							</div> 
 						</li>
 						
@@ -242,23 +241,23 @@
 						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;Juegos infantiles</li>-->
 						<li class="mb-3 scroll-content fadeTop">   
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/pesa.png" width="30px"   >
-									<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
+								<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+									<!--<img class="" src="img/pesa.png" width="30px">-->
+									<i class="fa-solid fa-dumbbell text-light"></i>
 								</div>
 								<p class="mb-0">&nbsp; GYM </p>
 							</div> 
 						</li>
 						<li class="mb-3 scroll-content fadeTop"> <div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
+							<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
 								<img class="" src="img/lobby.png" width="30px">
 							</div>
 							<p class="mb-0">&nbsp;Lobby </p>
 						</div>   </li>
 						<li class="mb-3 scroll-content fadeTop"> <div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/juegos-infantiles.png" width="30px">
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
+							<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+								<!--<img class="" src="img/juegos-infantiles.png" width="30px">-->
+								<i class="fa-solid fa-dumbbell text-light"></i>
 							</div>
 							<p class="mb-0" >&nbsp;Juegos infantiles </p>
 						</div>   </li>
@@ -270,23 +269,23 @@
 						<li class="mb-3 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp; Terraza</li>
 						<li class="mb-3 scroll-content fadeTop"><i class="bi bi-check2-circle fs-4 text-primary"></i> &nbsp;	 Salón de eventos</li>-->
 						<li class="mb-3 scroll-content fadeTop"><div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/tienda.png" width="30px"   >
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
+							<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+								<!--<img class="" src="img/tienda.png" width="30px"   >-->
+								<i class="fa-solid fa-dumbbell text-light"></i>
 							</div>
 							<p class="mb-0">&nbsp;  Tienda</p>
 						</div>  </li>
 						<li class="mb-3 scroll-content fadeTop"> <div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/terraza.png" width="30px"   >
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
+							<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+								<!--<img class="" src="img/terraza.png" width="30px"   >-->
+								<i class="fa-solid fa-dumbbell text-light"></i>
 							</div>
 							<p class="mb-0"> &nbsp; Terraza </p>
 						</div>  </li>
 						<li class="mb-3 scroll-content fadeTop"><div class="d-flex align-items-center"> 
-							<div class="bg-warning p-2"  style="border-radius: 100px; ">
-								<img class="" src="img/sala-eventos.png" width="30px"   >
-								<!--<i class="fa-solid fa-dumbbell text-primary"></i>-->
+							<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+								<!--<img class="" src="img/sala-eventos.png" width="30px"   >-->
+								<i class="fa-solid fa-dumbbell text-light"></i>
 							</div>
 							<p class="mb-0">&nbsp;	 Salón de eventos </p>
 						</div>  </li>
@@ -299,15 +298,17 @@
 		<img class="lazyload scroll-content fadeTop" data-src="img/servicios.png" width="100%" style="" alt="">
 	</div>
 	<!--seccion4-->
-	<div class="container-fluid bg-success text-white py-4 scroll-content fadeTop">
+	<div class="container-fluid text-white py-4 scroll-content fadeTop  fondo-verde "   >
 		<div class="container py-2">
 			<div class="row  ">
-				<div class="col-12 col-lg-8 mb-4 mb-lg-0">
-					<p class="text-center text-lg-start mb-0 scroll-content fadeTop">¡Y además podrás tener acceso exclusivo al Club de Playa en Telchac Puerto!  </p>
+				<div class="col-12 col-lg-8 mb-4 mb-lg-0 d-flex align-items-center">
+					<div class="" style="margin-top: auto; margin-bottom: auto;" >
+						<p class="text-center text-lg-start mb-0 scroll-content fadeTop">¡Y además podrás tener acceso exclusivo al <span class="text-warning"> Club de Playa en Telchac Puerto</span>!  </p>
+					</div>
 				</div>
 				<div class="col-12 col-lg-4 d-block d-lg-flex justify-content-end text-center align-items-center">
 					<div class="">
-						<button type="button"  class="btn btn-primary shadow scroll-content fadeTop" data-bs-toggle="modal" data-bs-target="#playa"   style="border-radius: 100px;">
+						<button type="button"  class="btn btn-light fw-bold text-primary shadow scroll-content fadeTop" data-bs-toggle="modal" data-bs-target="#playa"   style="border-radius: 100px;">
 							Recorrido Virtual Club de Playa
 						</button>
 						<!--<a   class="btn btn-primary" href="">  Recorrido Virtual Club de Playa </a>-->
@@ -343,93 +344,79 @@
 
 	<!--seccion5-->
 	<div class="container-fluid  py-5 ">
-		<div class="container py-3">
-			<h3 class="text-center mb-4 mb-lg-5 text-uppercase scroll-content fadeTop montserrat" style="font-weight: 700;" >Urbanismo y vanguardia</h3>
+		<div class="container py-5">
+			
 			<div class="row row-cols-1 row-cols-lg-2">
+				<div class="col">
+					<h3 class="h2  text-uppercase scroll-content fadeTop " style="font-weight: 700;" >Urbanismo y vanguardia</h3>
+					<h5 class="montserrat  mb-3 text-primary scroll-content fadeTop">¡Tu nuevo terreno en Mérida te está esperando! </h5>
+					<p class=" scroll-content fadeTop" style="font-size: 16px;">  Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega  </p>
+					<div class="pb-3">
+						<img class="img-fluid lazyload rounded shadow scroll-content fadeTop" data-src="img/luz,agua.png" alt="">
+					</div>
+					<p class=" scroll-content fadeTop" style="font-size: 16px;"> Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales </p>
+				</div>
 				<div class="col mb-4">
 					<div class="embed-responsive embed-responsive-16by9 ">
 						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/9_pCAN2C-mc" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					  </div>
-				</div>
-				<div class="col">
-					<p class=" text-center scroll-content fadeTop">  Cada predio será entregado con todos los servicios e instalaciones subterráneas, listos para construir a su fecha de entrega  </p>
-					<div class="py-4">
-						<img class="img-fluid lazyload rounded shadow scroll-content fadeTop" data-src="img/luz,agua.png" alt="">
 					</div>
-				
-					<p class=" text-center scroll-content fadeTop"> Energía eléctrica, abastecimiento de agua potable, drenaje y tratamiento de aguas residuales </p>
-
 				</div>
 			</div>
-			
 		</div>
 	</div>
 	<!--seccion5-->
 	<div class="container-fluid  py-5 ">
 		<div class="container ">
-			<h3 class=" text-uppercase text-center mb-4 mb-lg-5 scroll-content fadeTop montserrat" style="font-weight: 700;"> Seguridad y privacidad</h3>
 			<div class="row row-cols-1 row-cols-lg-2 py-4">
-				<div class="col d-block d-lg-none mb-4">
+				<div class="col d-none d-lg-block mb-4">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/mJTROq99hos" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="col mb-5 mb-lg-0">
-					<!--
-					<div class="row pt-4 pb-4 scroll-content fadeTop" style="max-width: 350px; margin: 0 auto;">
-						<div class="col ">
-							<img class="lazyload " data-src="img/camara-de-seguridad.png" width="80px" alt="">
-						</div>
-						<div class="col">
-							<img class="lazyload" data-src="img/seguridad.png" width="80px" alt="">
-						</div>
-						<div class="col">
-							<img class="lazyload" data-src="img/policia.png" width="80px" alt="">
-						</div>
-					</div>
-					-->
-					<p class=" scroll-content fadeTop">  <strong class="text-primary fw-normal"> Ciudad Central</strong> cuenta con medidas para garantizar que tú y tu familia tengan un entorno seguro, cómodo y privado.</p>
-					
+					<h3 class=" text-uppercase scroll-content fadeTop h2" style="font-weight: 700;"> Seguridad y privacidad</h3>
+					<h5 class="mb-3 text-primary scroll-content fadeTop"> Aparta tu terreno con $1000   </h5>
+					<p class=" scroll-content fadeTop" style="font-size: 16px;">  <strong class=""> Ciudad Central</strong> cuenta con medidas para garantizar que tú y tu familia tengan un entorno seguro, cómodo y privado.</p>
 					<div class="row row-cols-1 row-cols-lg-2 pt-3">
 						<div class="col mb-2 scroll-content fadeTop">
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/seguridad.png" width="30px"   >
+								<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+									<!--<img class="" src="img/seguridad.png" width="30px"   >-->
+									<i class="fa-solid fa-dumbbell text-light"></i>
 								</div>
-								<p class="mb-0" style="">&nbsp;  Vigilancia 24/7    </p>
+								<p class="mb-0" >&nbsp;  Vigilancia 24/7    </p>
 							</div>
 						</div>
 						<div class="col mb-2 scroll-content fadeTop">
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/muro.png" width="30px"   >
+								<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+									<!--<img class="" src="img/muro.png" width="30px"   >-->
+									<i class="fa-solid fa-dumbbell text-light"></i>
 								</div>
-								<p class="mb-0" style="">&nbsp;  Barda perimetral      </p>
+								<p class="mb-0" >&nbsp;  Barda perimetral      </p>
 							</div>
 						</div>
 						<div class="col mb-2 scroll-content fadeTop">
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/policia.png" width="30px"   >
+								<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+									<!--<img class="" src="img/policia.png" width="30px"   >-->
+									<i class="fa-solid fa-dumbbell text-light"></i>
 								</div>
-								<p class="mb-0" style="">&nbsp; Guardias    </p>
+								<p class="mb-0" >&nbsp; Guardias    </p>
 							</div>
 						</div>
 						<div class="col mb-2 scroll-content fadeTop">
 							<div class="d-flex align-items-center"> 
-								<div class="bg-warning p-2"  style="border-radius: 100px; ">
-									<img class="" src="img/camara-de-seguridad.png" width="30px"   >
+								<div class="bg-primary p-2"  style="border-radius: 100px;width: 35px;height: 35px; ">
+									<!--<img class="" src="img/camara-de-seguridad.png" width="30px"   >-->
+									<i class="fa-solid fa-dumbbell text-light"></i>
 								</div>
-								<p class="mb-0" style="">&nbsp; Circuito Cerrado   </p>
+								<p class="mb-0" >&nbsp; Circuito Cerrado   </p>
 							</div>
 						</div>
-						<!--
-						<div class="col mb-2 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Barda perimetral   </div>
-						<div class="col mb-2 scroll-content fadeTop"> <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Guardias    </div>
-						<div class="col mb-2 scroll-content fadeTop">  <i class="bi bi-check2-circle fs-3 text-primary"></i> &nbsp; Circuito Cerrado  </div>-->
 					</div>
 				</div>
-				<div class="col d-none d-lg-block">
+				<div class="col d-block d-lg-none mb-4">
 					<div class="embed-responsive embed-responsive-16by9">
 						<iframe class="rounded lazyload shadow scroll-content fadeTop" data-src="https://www.youtube.com/embed/mJTROq99hos" title="YouTube video player" width="100%"  height="350" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>

@@ -102,6 +102,7 @@
   .fondo-verde{
     background-image: url(../img/fondo-verde.png);
   }
+  
 
 @media only screen and (min-width:900px) and (max-width:2000px){
     .movi {
@@ -118,10 +119,16 @@
         z-index: 9;
         background-color: #fff;
       }
+      .altura-slider{
+        height: 650px;
+      }
       /*.movidito {
         position: absolute;
         top: 50px;
       }*/
+      .fuentek{
+        font-size: 50px;
+    }
 }
 @media only screen and (min-width:100px) and (max-width:900px){
     .fondo{
@@ -135,6 +142,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+    }
+    .altura-slider{
+        height: 350px;
+    }
+    .fuentek{
+        font-size: 40px;
     }
 }	
 
